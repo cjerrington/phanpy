@@ -1154,7 +1154,7 @@ function Compose({
               class={`toolbar-button ${
                 visibility !== 'public' && !sensitive ? 'show-field' : ''
               } ${visibility !== 'public' ? 'highlight' : ''}`}
-              title={`Visibility: ${visibility}`}
+              title={visibility}
             >
               <Icon icon={visibilityIconsMap[visibility]} alt={visibility} />
               <select
@@ -1169,6 +1169,11 @@ function Compose({
                 <option value="public">
                   <Trans>Public</Trans>
                 </option>
+                {(supports('@pleroma/local-visibility-post') || supports('@akkoma/local-visibility-post')) &&
+                  <option value="local">
+                    <Trans>Local</Trans>
+                  </option>
+                }
                 <option value="unlisted">
                   <Trans>Unlisted</Trans>
                 </option>
