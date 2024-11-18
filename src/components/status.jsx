@@ -2220,6 +2220,7 @@ function Status({
                                   }
                                 : undefined
                             }
+                            checkAspectRatio={mediaAttachments.length === 1}
                           />
                         ))}
                       </div>
@@ -2266,6 +2267,19 @@ function Status({
                     /> */}
                     <span>{_(visibilityText[visibility])}</span> &bull;{' '}
                     <a href={url} target="_blank" rel="noopener noreferrer">
+                      {
+                        // within a day
+                        new Date().getTime() - createdAtDate.getTime() <
+                          86400000 && (
+                          <>
+                            <RelativeTime
+                              datetime={createdAtDate}
+                              format="micro"
+                            />{' '}
+                            ‒{' '}
+                          </>
+                        )
+                      }
                       <time
                         class="created"
                         datetime={createdAtDate.toISOString()}
@@ -2878,7 +2892,7 @@ function Card({ card, selfReferential, selfAuthor, instance }) {
         if (videoID) {
           return (
             <a class="card video" onClick={handleClick}>
-              <lite-youtube videoid={videoID} nocookie></lite-youtube>
+              <lite-youtube videoid={videoID} nocookie autoPause></lite-youtube>
             </a>
           );
         }
