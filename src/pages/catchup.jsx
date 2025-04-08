@@ -35,6 +35,7 @@ import { oklab2rgb, rgb2oklab } from '../utils/color-utils';
 import db from '../utils/db';
 import emojifyText from '../utils/emojify-text';
 import { isFiltered } from '../utils/filters';
+import getDomain from '../utils/get-domain';
 import htmlContentLength from '../utils/html-content-length';
 import mem from '../utils/mem';
 import niceDateTime from '../utils/nice-date-time';
@@ -1171,11 +1172,7 @@ function Catchup() {
                         height,
                         publishedAt,
                       } = card;
-                      const domain = punycode.toUnicode(
-                        URL.parse(url)
-                          .hostname.replace(/^www\./, '')
-                          .replace(/\/$/, ''),
-                      );
+                      const domain = getDomain(url);
                       let accentColor;
                       if (blurhash) {
                         const averageColor = getBlurHashAverageColor(blurhash);
@@ -2090,15 +2087,20 @@ function binByTime(data, key, numBins) {
   );
 
   // Calculate the time span in milliseconds
-  const range = maxDate.getTime() - minDate.getTime();
+  const range = Math.min(maxDate.getTime(), Date.now()) - minDate.getTime();
 
   // Create empty bins and loop through data
   const bins = Array.from({ length: numBins }, () => []);
   data.forEach((item) => {
     const date = new Date(item[key]);
-    const normalized = (date.getTime() - minDate.getTime()) / range;
-    const binIndex = Math.floor(normalized * (numBins - 1));
-    bins[binIndex].push(item);
+    if (date.getTime() > Date.now()) {
+      // Future dates go into the last bin
+      bins[bins.length - 1].push(item);
+    } else {
+      const normalized = (date.getTime() - minDate.getTime()) / range;
+      const binIndex = Math.floor(normalized * (numBins - 1));
+      bins[binIndex].push(item);
+    }
   });
 
   return bins;
