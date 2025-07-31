@@ -749,9 +749,9 @@
     --shadow-spread: calc(var(--shadow-blur) * -0.75);
     box-shadow:
       calc(var(--shadow-offset) * -1) var(--shadow-offset) var(--shadow-blur)
-        var(--shadow-spread) var(--header-color-1, var(--drop-shadow-color)),
+      var(--shadow-spread) var(--header-color-1, var(--drop-shadow-color)),
       var(--shadow-offset) var(--shadow-offset) var(--shadow-blur)
-        var(--shadow-spread) var(--header-color-2, var(--drop-shadow-color));
+      var(--shadow-spread) var(--header-color-2, var(--drop-shadow-color));
   }
   /* .timeline-start .account-container .header-banner {
     margin-bottom: -77px;
@@ -1046,11 +1046,7 @@
 
       .account-block-content {
         min-width: 0;
-        mask-image: linear-gradient(
-          var(--to-backward),
-          transparent,
-          black 16px
-        );
+        mask-image: linear-gradient(var(--to-backward), transparent, black 16px);
       }
 
       .account-block-stats {
