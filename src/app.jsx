@@ -15,6 +15,11 @@ import { matchPath, Route, Routes, useLocation } from 'react-router-dom';
 import 'swiped-events';
 
 import { subscribe } from 'valtio';
+import { unstable_enableOp } from 'valtio/vanilla';
+
+// https://github.com/pmndrs/valtio/releases/tag/v2.3.0
+// Necessary for subscribe() to work properly
+unstable_enableOp(true);
 
 import BackgroundService from './components/background-service';
 import ComposeButton from './components/compose-button';
@@ -77,6 +82,9 @@ const Sandbox =
   import.meta.env.DEV || import.meta.env.PHANPY_DEV
     ? lazy(() => import('./pages/sandbox'))
     : () => null;
+
+// Lazy load YearInPosts component
+const YearInPosts = lazy(() => import('./pages/year-in-posts'));
 
 // QR Scan Test component for development
 function QrScanTest() {
@@ -688,6 +696,25 @@ function SecondaryRoutes({ isLoggedIn }) {
           <Route path="/sp" element={<ScheduledPosts />} />
           <Route path="/ft" element={<Filters />} />
           <Route path="/catchup" element={<Catchup />} />
+          <Route
+            path="/yip"
+            element={
+              <Suspense
+                fallback={
+                  <div
+                    id="year-in-posts-page"
+                    class="deck-container"
+                    tabIndex="-1"
+                  >
+                    {/* Prevent flash of no background as this is lazy-loaded */}
+                    <Loader />
+                  </div>
+                }
+              >
+                <YearInPosts />
+              </Suspense>
+            }
+          />
           <Route path="/annual_report/:year" element={<AnnualReport />} />
         </>
       )}

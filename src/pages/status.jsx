@@ -104,6 +104,33 @@ function StatusPage(params) {
     }
   }, [sKey]);
 
+  // Set canonical link, not for SEO, but for sharing
+  useEffect(() => {
+    if (!heroStatus || !heroStatus.url) return;
+
+    const existingCanonical = document.querySelector('link[rel="canonical"]');
+    let originalHref = null;
+    let canonicalLink;
+
+    if (existingCanonical) {
+      originalHref = existingCanonical.href;
+      existingCanonical.href = heroStatus.url;
+    } else {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      canonicalLink.href = heroStatus.url;
+      document.head.appendChild(canonicalLink);
+    }
+
+    return () => {
+      if (existingCanonical && originalHref) {
+        existingCanonical.href = originalHref;
+      } else if (canonicalLink) {
+        document.head.removeChild(canonicalLink);
+      }
+    };
+  }, [heroStatus?.url]);
+
   const closeLink = useMemo(() => {
     const { prevLocation } = states;
     const pathname =
@@ -915,6 +942,28 @@ function StatusThread({ id, closeLink = '/', instance: propInstance }) {
         const details = activeStatus.nextElementSibling;
         if (details && details.tagName.toLowerCase() === 'details') {
           details.open = !details.open;
+        }
+      }
+    },
+    {
+      useKey: true,
+      ignoreEventWhen: (e) => e.metaKey || e.ctrlKey || e.altKey || e.shiftKey,
+    },
+  );
+
+  useHotkeys(
+    'o',
+    () => {
+      // open media of active status (not inside status-card)
+      const activeStatus = document.activeElement.closest(
+        '.status-link, .status-focus',
+      );
+      if (activeStatus) {
+        const mediaLink = activeStatus.querySelector(
+          'a.media:not(.status-card a.media)',
+        );
+        if (mediaLink) {
+          mediaLink.click();
         }
       }
     },

@@ -195,4 +195,9 @@ export const ICONS = {
   qrcode: () => import('@iconify-icons/mingcute/qrcode-2-line'),
   scan: () => import('@iconify-icons/mingcute/scan-line'),
   note: () => import('@iconify-icons/mingcute/document-3-line'),
+  grid: () => import('@iconify-icons/mingcute/grid-line'),
+  moon: {
+    module: () => import('@iconify-icons/mingcute/moon-line'),
+    flip: 'horizontal',
+  },
 };
