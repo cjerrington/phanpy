@@ -8,7 +8,7 @@ msgstr ""
 "Language: ja\n"
 "Project-Id-Version: phanpy\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-22 14:42\n"
+"PO-Revision-Date: 2026-02-07 15:32\n"
 "Last-Translator: \n"
 "Language-Team: Japanese\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -120,7 +120,7 @@ msgstr "ハンドルをコピー"
 #: src/components/account-info.jsx:634
 #: src/components/related-actions.jsx:255
 #: src/components/related-actions.jsx:604
-#: src/components/shortcuts-settings.jsx:1083
+#: src/components/shortcuts-settings.jsx:1081
 msgid "QR code"
 msgstr "QRコード"
 
@@ -147,7 +147,7 @@ msgid "In Memoriam"
 msgstr ""
 
 #: src/components/account-info.jsx:786
-#: src/components/compose.jsx:1981
+#: src/components/compose.jsx:2004
 #: src/pages/settings.jsx:296
 #: src/utils/visibility-text.jsx:7
 msgid "Followers"
@@ -223,8 +223,8 @@ msgstr "オリジナル"
 #: src/pages/catchup.jsx:74
 #: src/pages/catchup.jsx:1575
 #: src/pages/catchup.jsx:2230
-#: src/pages/status.jsx:1189
-#: src/pages/status.jsx:1914
+#: src/pages/status.jsx:1187
+#: src/pages/status.jsx:1912
 #: src/pages/year-in-posts.jsx:1392
 msgid "Replies"
 msgstr "返信"
@@ -242,7 +242,7 @@ msgstr "引用"
 #: src/pages/catchup.jsx:76
 #: src/pages/catchup.jsx:1577
 #: src/pages/catchup.jsx:2242
-#: src/pages/settings.jsx:1270
+#: src/pages/settings.jsx:1269
 #: src/pages/year-in-posts.jsx:1404
 msgid "Boosts"
 msgstr "ブースト"
@@ -257,7 +257,7 @@ msgstr "投稿の統計を見る"
 
 #: src/components/account-sheet.jsx:38
 #: src/components/add-remove-lists-sheet.jsx:45
-#: src/components/compose.jsx:1065
+#: src/components/compose.jsx:1088
 #: src/components/custom-emojis-modal.jsx:272
 #: src/components/drafts.jsx:57
 #: src/components/edit-profile-sheet.jsx:89
@@ -295,7 +295,7 @@ msgstr "投稿の統計を見る"
 #: src/pages/notifications.jsx:941
 #: src/pages/scheduled-posts.jsx:288
 #: src/pages/settings.jsx:100
-#: src/pages/status.jsx:1653
+#: src/pages/status.jsx:1651
 msgid "Close"
 msgstr "閉じる"
 
@@ -328,11 +328,11 @@ msgstr "リストはありません。"
 msgid "New list"
 msgstr "新しいリスト"
 
-#: src/components/background-service.jsx:158
+#: src/components/background-service.jsx:160
 msgid "Cloak mode disabled"
 msgstr "クロークモードは無効化されています"
 
-#: src/components/background-service.jsx:158
+#: src/components/background-service.jsx:160
 msgid "Cloak mode enabled"
 msgstr "クロークモードは有効化されています"
 
@@ -384,7 +384,7 @@ msgid "Remove"
 msgstr "削除"
 
 #: src/components/compose-poll.jsx:80
-#: src/components/compose.jsx:1689
+#: src/components/compose.jsx:1712
 #: src/components/mention-modal.jsx:221
 #: src/components/shortcuts-settings.jsx:716
 #: src/pages/list.jsx:388
@@ -431,87 +431,86 @@ msgstr "CWを追加"
 msgid "Schedule post"
 msgstr "投稿を予約"
 
-#: src/components/compose.jsx:550
-msgid "You have unsaved changes. Discard this post?"
-msgstr "保存されていない変更があります。この投稿を破棄しますか？"
-
 #. placeholder {0}: unsupportedFiles.length
 #. placeholder {1}: unsupportedFiles[0].name
 #. placeholder {2}: lf.format( unsupportedFiles.map((f) => f.name), )
-#: src/components/compose.jsx:796
+#: src/components/compose.jsx:253
 msgid "{0, plural, one {File {1} is not supported.} other {Files {2} are not supported.}}"
 msgstr "{0, plural, other {ファイル {2} はサポートされていません。}}"
 
-#: src/components/compose.jsx:806
-#: src/components/compose.jsx:824
-#: src/components/compose.jsx:2112
+#: src/components/compose.jsx:269
+#: src/components/compose.jsx:2135
 #: src/components/file-picker-input.jsx:38
 msgid "{maxMediaAttachments, plural, one {You can only attach up to 1 file.} other {You can only attach up to # files.}}"
 msgstr "{maxMediaAttachments, plural, other {添付できるファイルは最大#個までです。}}"
 
-#: src/components/compose.jsx:1046
+#: src/components/compose.jsx:619
+msgid "You have unsaved changes. Discard this post?"
+msgstr "保存されていない変更があります。この投稿を破棄しますか？"
+
+#: src/components/compose.jsx:1069
 msgid "Pop out"
 msgstr "ポップアウト"
 
-#: src/components/compose.jsx:1053
+#: src/components/compose.jsx:1076
 msgid "Minimize"
 msgstr "最小化"
 
-#: src/components/compose.jsx:1089
+#: src/components/compose.jsx:1112
 msgid "Looks like you closed the parent window."
 msgstr "親ウィンドウを閉じたようです。"
 
-#: src/components/compose.jsx:1096
+#: src/components/compose.jsx:1119
 msgid "Looks like you already have a compose field open in the parent window and currently publishing. Please wait for it to be done and try again later."
 msgstr "親ウィンドウで編集画面が開いており、現在公開中のようです。 完了するまで待ってからもう一度やり直してください。"
 
-#: src/components/compose.jsx:1101
+#: src/components/compose.jsx:1124
 msgid "Looks like you already have a compose field open in the parent window. Popping in this window will discard the changes you made in the parent window. Continue?"
 msgstr "すでに親ウィンドウで編集画面が開いているようです。 このウィンドウを開くと、親ウィンドウで行った変更が破棄されます。続けますか？"
 
-#: src/components/compose.jsx:1147
+#: src/components/compose.jsx:1170
 msgid "Pop in"
 msgstr "ポップイン"
 
 #. placeholder {0}: replyToStatus.account.acct || replyToStatus.account.username
 #. placeholder {1}: rtf.format(-replyToStatusMonthsAgo, 'month')
-#: src/components/compose.jsx:1157
+#: src/components/compose.jsx:1180
 msgid "Replying to @{0}’s post (<0>{1}</0>)"
 msgstr "@{0}の投稿に返信します (<0>{1}</0>)"
 
 #. placeholder {0}: replyToStatus.account.acct || replyToStatus.account.username
-#: src/components/compose.jsx:1167
+#: src/components/compose.jsx:1190
 msgid "Replying to @{0}’s post"
 msgstr "@{0}の投稿に返信します"
 
-#: src/components/compose.jsx:1180
+#: src/components/compose.jsx:1203
 msgid "Editing source post"
 msgstr "元の投稿を編集しています"
 
-#: src/components/compose.jsx:1249
+#: src/components/compose.jsx:1272
 msgid "Poll must have at least 2 options"
 msgstr "投票には少なくとも2つの選択肢が必要です"
 
-#: src/components/compose.jsx:1253
+#: src/components/compose.jsx:1276
 msgid "Some poll choices are empty"
 msgstr "一部のアンケートの選択肢が空です"
 
-#: src/components/compose.jsx:1266
+#: src/components/compose.jsx:1289
 msgid "Some media have no descriptions. Continue?"
 msgstr "一部のメディアには説明がありません。続行しますか？"
 
-#: src/components/compose.jsx:1318
+#: src/components/compose.jsx:1341
 msgid "Attachment #{i} failed"
 msgstr "ファイル #{i} の添付に失敗しました"
 
-#: src/components/compose.jsx:1445
+#: src/components/compose.jsx:1468
 #: src/components/status.jsx:2495
 #: src/components/timeline.jsx:1013
 msgid "Content warning"
 msgstr "コンテンツに関する警告"
 
-#: src/components/compose.jsx:1477
-#: src/components/compose.jsx:1623
+#: src/components/compose.jsx:1500
+#: src/components/compose.jsx:1646
 #: src/components/edit-profile-sheet.jsx:326
 #: src/components/import-accounts-selection.jsx:175
 #: src/components/open-link-sheet.jsx:74
@@ -520,85 +519,85 @@ msgstr "コンテンツに関する警告"
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: src/components/compose.jsx:1485
+#: src/components/compose.jsx:1508
 msgid "Post your reply"
 msgstr "返信を投稿"
 
-#: src/components/compose.jsx:1487
+#: src/components/compose.jsx:1510
 msgid "Edit your post"
 msgstr "投稿を編集する"
 
-#: src/components/compose.jsx:1489
+#: src/components/compose.jsx:1512
 msgid "Ask a question"
 msgstr "質問する"
 
-#: src/components/compose.jsx:1490
+#: src/components/compose.jsx:1513
 msgid "What are you doing?"
 msgstr "なにしてる？"
 
-#: src/components/compose.jsx:1563
+#: src/components/compose.jsx:1586
 msgid "Mark media as sensitive"
 msgstr "メディアを閲覧注意にする"
 
-#: src/components/compose.jsx:1603
+#: src/components/compose.jsx:1626
 msgid "Posting on <0/>"
 msgstr "投稿日時"
 
-#: src/components/compose.jsx:1901
+#: src/components/compose.jsx:1924
 #: src/components/quote-settings-sheet.jsx:82
 #: src/components/status.jsx:296
 #: src/pages/settings.jsx:338
 msgid "Anyone can quote"
 msgstr "誰でも引用可能"
 
-#: src/components/compose.jsx:1904
+#: src/components/compose.jsx:1927
 #: src/components/quote-settings-sheet.jsx:85
 #: src/components/status.jsx:297
 #: src/pages/settings.jsx:341
 msgid "Your followers can quote"
 msgstr "あなたのフォロワーが引用可能"
 
-#: src/components/compose.jsx:1907
+#: src/components/compose.jsx:1930
 #: src/components/quote-settings-sheet.jsx:88
 #: src/components/status.jsx:298
 #: src/pages/settings.jsx:344
 msgid "Only you can quote"
 msgstr "あなただけが引用可能"
 
-#: src/components/compose.jsx:1947
+#: src/components/compose.jsx:1970
 msgid "Quotes can't be embedded in private mentions."
 msgstr "引用を非公開メンションに含めることはできません。"
 
-#: src/components/compose.jsx:1969
+#: src/components/compose.jsx:1992
 #: src/pages/settings.jsx:290
 #: src/utils/visibility-text.jsx:4
 msgid "Public"
 msgstr "公開"
 
-#: src/components/compose.jsx:1974
+#: src/components/compose.jsx:1997
 #: src/components/nav-menu.jsx:349
 #: src/components/shortcuts-settings.jsx:166
 #: src/utils/visibility-text.jsx:5
 msgid "Local"
 msgstr "ローカル"
 
-#: src/components/compose.jsx:1978
+#: src/components/compose.jsx:2001
 #: src/pages/settings.jsx:293
 #: src/utils/visibility-text.jsx:6
 msgid "Quiet public"
 msgstr "ひかえめな公開"
 
-#: src/components/compose.jsx:1984
+#: src/components/compose.jsx:2007
 #: src/components/status.jsx:2372
 #: src/utils/visibility-text.jsx:8
 msgid "Private mention"
 msgstr "非公開の返信"
 
-#: src/components/compose.jsx:2036
+#: src/components/compose.jsx:2059
 msgid "Schedule"
 msgstr "予約する"
 
-#: src/components/compose.jsx:2038
+#: src/components/compose.jsx:2061
 #: src/components/keyboard-shortcuts-help.jsx:165
 #: src/components/status.jsx:1099
 #: src/components/status.jsx:1133
@@ -609,20 +608,20 @@ msgstr "予約する"
 msgid "Reply"
 msgstr "返信"
 
-#: src/components/compose.jsx:2040
+#: src/components/compose.jsx:2063
 msgid "Update"
 msgstr "更新"
 
-#: src/components/compose.jsx:2041
+#: src/components/compose.jsx:2064
 msgctxt "Submit button in composer"
 msgid "Post"
 msgstr "投稿"
 
-#: src/components/compose.jsx:2124
+#: src/components/compose.jsx:2147
 msgid "Downloading GIF…"
 msgstr "GIF をダウンロード中…"
 
-#: src/components/compose.jsx:2152
+#: src/components/compose.jsx:2175
 msgid "Failed to download GIF"
 msgstr "GIF のダウンロードに失敗しました"
 
@@ -664,7 +663,7 @@ msgid "Custom emojis are not available on this server."
 msgstr ""
 
 #: src/components/drafts.jsx:62
-#: src/pages/settings.jsx:699
+#: src/pages/settings.jsx:698
 msgid "Unsent drafts"
 msgstr "未送信の下書き"
 
@@ -837,7 +836,7 @@ msgstr "アカウント"
 #: src/pages/list.jsx:321
 #: src/pages/notifications.jsx:921
 #: src/pages/search.jsx:562
-#: src/pages/status.jsx:1687
+#: src/pages/status.jsx:1685
 msgid "Show more…"
 msgstr "もっと見る…"
 
@@ -912,7 +911,7 @@ msgid "Select file…"
 msgstr ""
 
 #: src/components/import-export-accounts.jsx:151
-#: src/components/shortcuts-settings.jsx:1050
+#: src/components/shortcuts-settings.jsx:1048
 msgid "Export"
 msgstr "エクスポート"
 
@@ -1183,7 +1182,7 @@ msgstr "メディアの説明"
 #: src/pages/list.jsx:171
 #: src/pages/public.jsx:116
 #: src/pages/scheduled-posts.jsx:89
-#: src/pages/status.jsx:1554
+#: src/pages/status.jsx:1552
 #: src/pages/trending.jsx:474
 msgid "More"
 msgstr "その他"
@@ -1341,23 +1340,23 @@ msgstr "ファイルを開く"
 msgid "Search accounts"
 msgstr "アカウントを検索"
 
-#: src/components/modals.jsx:89
+#: src/components/modals.jsx:93
 msgid "Post scheduled"
 msgstr "投稿を予約しました"
 
-#: src/components/modals.jsx:90
+#: src/components/modals.jsx:94
 msgid "Post published. Check it out."
 msgstr "公開しました。チェックしてみてください。"
 
-#: src/components/modals.jsx:92
+#: src/components/modals.jsx:96
 msgid "Reply scheduled"
 msgstr "返信を予約しました"
 
-#: src/components/modals.jsx:93
+#: src/components/modals.jsx:97
 msgid "Reply posted. Check it out."
 msgstr "返信を予約しました。チェックしてみてください。"
 
-#: src/components/modals.jsx:94
+#: src/components/modals.jsx:98
 msgid "Post updated. Check it out."
 msgstr "投稿を更新しました。チェックしてみてください。"
 
@@ -1383,7 +1382,7 @@ msgstr ""
 
 #: src/components/nav-menu.jsx:197
 #: src/pages/catchup.jsx:1003
-#: src/pages/welcome.jsx:149
+#: src/pages/welcome.jsx:154
 msgid "Catch-up"
 msgstr "キャッチアップ"
 
@@ -1393,7 +1392,7 @@ msgstr "キャッチアップ"
 #: src/pages/home.jsx:240
 #: src/pages/mentions.jsx:21
 #: src/pages/mentions.jsx:174
-#: src/pages/settings.jsx:1262
+#: src/pages/settings.jsx:1261
 #: src/pages/trending.jsx:384
 msgid "Mentions"
 msgstr "メンション"
@@ -1437,7 +1436,7 @@ msgstr "その他…"
 #: src/pages/catchup.jsx:2236
 #: src/pages/favourites.jsx:12
 #: src/pages/favourites.jsx:26
-#: src/pages/settings.jsx:1266
+#: src/pages/settings.jsx:1265
 msgid "Likes"
 msgstr "いいね！"
 
@@ -1479,7 +1478,7 @@ msgstr "アカウント…"
 #: src/pages/login.jsx:33
 #: src/pages/login.jsx:227
 #: src/pages/status.jsx:1081
-#: src/pages/welcome.jsx:68
+#: src/pages/welcome.jsx:63
 msgid "Log in"
 msgstr "ログイン"
 
@@ -1708,7 +1707,7 @@ msgstr "リンクを開く"
 #: src/components/open-link-sheet.jsx:78
 #: src/components/post-embed-modal.jsx:232
 #: src/components/related-actions.jsx:565
-#: src/components/shortcuts-settings.jsx:1159
+#: src/components/shortcuts-settings.jsx:1157
 #: src/components/status.jsx:1468
 msgid "Copy"
 msgstr "コピー"
@@ -1723,73 +1722,73 @@ msgstr "共有…"
 msgid "Open"
 msgstr "開く"
 
-#: src/components/poll.jsx:128
+#: src/components/poll.jsx:159
 msgid "{optionVotesCount, plural, one {# vote} other {# votes}}"
 msgstr "{optionVotesCount, plural, other {#投票}}"
 
-#: src/components/poll.jsx:135
+#: src/components/poll.jsx:166
 msgid "Voted"
 msgstr "投票済み"
 
-#: src/components/poll.jsx:156
-#: src/components/poll.jsx:350
-#: src/components/poll.jsx:354
+#: src/components/poll.jsx:190
+#: src/components/poll.jsx:387
+#: src/components/poll.jsx:391
 msgid "Hide results"
 msgstr "結果を隠す"
 
 #. placeholder {0}: options.length
-#: src/components/poll.jsx:161
-#: src/components/poll.jsx:251
-#: src/components/poll.jsx:267
+#: src/components/poll.jsx:195
+#: src/components/poll.jsx:288
+#: src/components/poll.jsx:304
 msgid "{0, plural, one {# choice} other {# choices}}"
 msgstr ""
 
-#: src/components/poll.jsx:187
+#: src/components/poll.jsx:221
 msgid "Unable to vote in poll"
 msgstr ""
 
-#: src/components/poll.jsx:240
+#: src/components/poll.jsx:277
 msgid "Vote"
 msgstr "投票する"
 
 #. placeholder {0}: shortenNumber(votesCount)
 #. placeholder {1}: shortenNumber(votesCount)
-#: src/components/poll.jsx:277
+#: src/components/poll.jsx:314
 msgid "{votesCount, plural, one {<0>{0}</0> vote} other {<1>{1}</1> votes}}"
 msgstr "{votesCount, plural, one {<0>{0}</0> 票} other {<1>{1}</1> 票}}"
 
 #. placeholder {0}: shortenNumber(votersCount)
 #. placeholder {1}: shortenNumber(votersCount)
-#: src/components/poll.jsx:298
+#: src/components/poll.jsx:335
 msgid "{votersCount, plural, one {<0>{0}</0> voter} other {<1>{1}</1> voters}}"
 msgstr ""
 
-#: src/components/poll.jsx:324
+#: src/components/poll.jsx:361
 msgid "Ended <0/>"
 msgstr "終了済み <0/>"
 
-#: src/components/poll.jsx:329
+#: src/components/poll.jsx:366
 msgid "Ended"
 msgstr "終了済み"
 
-#: src/components/poll.jsx:333
+#: src/components/poll.jsx:370
 msgid "Ending <0/>"
 msgstr "終了 <0/>"
 
-#: src/components/poll.jsx:338
+#: src/components/poll.jsx:375
 msgid "Ending"
 msgstr "終了中"
 
-#: src/components/poll.jsx:350
-#: src/components/poll.jsx:354
+#: src/components/poll.jsx:387
+#: src/components/poll.jsx:391
 msgid "Show results"
 msgstr "結果を表示"
 
-#: src/components/poll.jsx:372
-#: src/components/poll.jsx:374
+#: src/components/poll.jsx:409
+#: src/components/poll.jsx:411
 #: src/pages/scheduled-posts.jsx:100
-#: src/pages/status.jsx:1543
-#: src/pages/status.jsx:1566
+#: src/pages/status.jsx:1541
+#: src/pages/status.jsx:1564
 msgid "Refresh"
 msgstr "更新"
 
@@ -1858,7 +1857,7 @@ msgstr "注: このプレビューは軽くスタイル付けされています�
 #: src/components/private-note-sheet.jsx:41
 #: src/components/related-actions.jsx:232
 msgid "Notes"
-msgstr ""
+msgstr "メモ"
 
 #: src/components/private-note-sheet.jsx:44
 msgid "Only visible to you"
@@ -1883,15 +1882,15 @@ msgstr "カメラにアクセスできません。権限を確認してくださ
 
 #: src/components/quote-chain-modal.jsx:107
 msgid "Quote chain"
-msgstr ""
+msgstr "引用チェーン"
 
 #: src/components/quote-chain-modal.jsx:151
 msgid "Failed to unwrap quote chain"
-msgstr ""
+msgstr "引用チェーンの展開に失敗しました"
 
 #: src/components/quote-chain-modal.jsx:165
 msgid "Continue unwrapping…"
-msgstr ""
+msgstr "さらに展開…"
 
 #: src/components/quote-settings-sheet.jsx:37
 #: src/pages/settings.jsx:329
@@ -1972,7 +1971,7 @@ msgstr "<0>@{username}</0>にメンション"
 
 #: src/components/related-actions.jsx:319
 msgid "Search <0>@{username}</0>'s posts"
-msgstr ""
+msgstr "<0>@{username}</0> さんの投稿を検索"
 
 #: src/components/related-actions.jsx:333
 msgid "Translate bio"
@@ -1980,11 +1979,11 @@ msgstr "プロフィールを翻訳"
 
 #: src/components/related-actions.jsx:343
 msgid "Edit notes"
-msgstr ""
+msgstr "メモを編集"
 
 #: src/components/related-actions.jsx:343
 msgid "Add notes"
-msgstr ""
+msgstr "メモを追加"
 
 #: src/components/related-actions.jsx:362
 msgid "Notifications enabled for @{username}'s posts."
@@ -2008,7 +2007,7 @@ msgstr "@{username} からのブーストを有効にしました。"
 
 #: src/components/related-actions.jsx:394
 msgid "Boosts from @{username} disabled."
-msgstr ""
+msgstr "@{username} からのブーストを無効にしました。"
 
 #: src/components/related-actions.jsx:405
 msgid "Disable boosts"
@@ -2051,10 +2050,10 @@ msgstr "紹介されたプロフィールを表示"
 #: src/components/related-actions.jsx:507
 #: src/pages/account-statuses.jsx:464
 msgid "Search my posts"
-msgstr ""
+msgstr "自分の投稿を検索"
 
 #: src/components/related-actions.jsx:580
-#: src/components/shortcuts-settings.jsx:1177
+#: src/components/shortcuts-settings.jsx:1175
 #: src/components/status.jsx:1484
 msgid "Sharing doesn't seem to work."
 msgstr "共有は機能しないようです。"
@@ -2219,7 +2218,7 @@ msgstr "ポストを報告しました"
 
 #: src/components/report-modal.jsx:189
 msgid "Profile reported"
-msgstr "プロファイルを報告しました"
+msgstr "プロフィールを報告しました"
 
 #: src/components/report-modal.jsx:197
 msgid "Unable to report post"
@@ -2326,8 +2325,8 @@ msgstr "ローカルのみ"
 #: src/components/shortcuts-settings.jsx:85
 #: src/components/shortcuts-settings.jsx:123
 #: src/pages/login.jsx:231
-msgid "Instance"
-msgstr "インスタンス"
+msgid "Server"
+msgstr "サーバー"
 
 #: src/components/shortcuts-settings.jsx:79
 #: src/components/shortcuts-settings.jsx:88
@@ -2470,119 +2469,119 @@ msgstr "<0>ショートカット</0>のインポート/エクスポート"
 msgid "Paste shortcuts here"
 msgstr "ここにショートカットを貼り付け"
 
-#: src/components/shortcuts-settings.jsx:845
-msgid "Downloading saved shortcuts from instance server…"
-msgstr "サーバーから保存したショートカットをダウンロード"
+#: src/components/shortcuts-settings.jsx:844
+msgid "Downloading saved shortcuts from server…"
+msgstr ""
 
-#: src/components/shortcuts-settings.jsx:874
+#: src/components/shortcuts-settings.jsx:872
 msgid "Unable to download shortcuts"
 msgstr "ショートカットをダウンロードできません"
 
-#: src/components/shortcuts-settings.jsx:877
-msgid "Download shortcuts from instance server"
-msgstr "サーバーからショートカットをダウンロード"
+#: src/components/shortcuts-settings.jsx:875
+msgid "Download shortcuts from server"
+msgstr ""
 
-#: src/components/shortcuts-settings.jsx:944
+#: src/components/shortcuts-settings.jsx:942
 msgid "* Exists in current shortcuts"
 msgstr "* 現在のショートカットに存在します"
 
-#: src/components/shortcuts-settings.jsx:949
+#: src/components/shortcuts-settings.jsx:947
 msgid "List may not work if it's from a different account."
 msgstr "別のアカウントのリストは動作しない場合があります。"
 
-#: src/components/shortcuts-settings.jsx:959
+#: src/components/shortcuts-settings.jsx:957
 msgid "Invalid settings format"
 msgstr "無効な設定フォーマット"
 
-#: src/components/shortcuts-settings.jsx:967
+#: src/components/shortcuts-settings.jsx:965
 msgid "Append to current shortcuts?"
 msgstr "現在のショートカットに追加しますか？"
 
-#: src/components/shortcuts-settings.jsx:970
+#: src/components/shortcuts-settings.jsx:968
 msgid "Only shortcuts that don’t exist in current shortcuts will be appended."
 msgstr "現在のショートカットに存在しないもののみが追加されます。"
 
-#: src/components/shortcuts-settings.jsx:992
+#: src/components/shortcuts-settings.jsx:990
 msgid "No new shortcuts to import"
 msgstr "インポートする新しいショートカットはありません"
 
-#: src/components/shortcuts-settings.jsx:1007
+#: src/components/shortcuts-settings.jsx:1005
 msgid "Shortcuts imported. Exceeded max {SHORTCUTS_LIMIT}, so the rest are not imported."
 msgstr "ショートカットがインポートされました。 {SHORTCUTS_LIMIT}を超えたため、残りはインポートされません。"
 
-#: src/components/shortcuts-settings.jsx:1008
-#: src/components/shortcuts-settings.jsx:1032
+#: src/components/shortcuts-settings.jsx:1006
+#: src/components/shortcuts-settings.jsx:1030
 msgid "Shortcuts imported"
 msgstr "ショートカットをインポートしました"
 
-#: src/components/shortcuts-settings.jsx:1018
+#: src/components/shortcuts-settings.jsx:1016
 msgid "Import & append…"
 msgstr "インポートと追加…"
 
-#: src/components/shortcuts-settings.jsx:1026
+#: src/components/shortcuts-settings.jsx:1024
 msgid "Override current shortcuts?"
 msgstr "現在のショートカットを上書きしますか？"
 
-#: src/components/shortcuts-settings.jsx:1027
+#: src/components/shortcuts-settings.jsx:1025
 msgid "Import shortcuts?"
 msgstr "ショートカットをインポートしますか？"
 
-#: src/components/shortcuts-settings.jsx:1041
+#: src/components/shortcuts-settings.jsx:1039
 msgid "or override…"
 msgstr "または上書きする…"
 
-#: src/components/shortcuts-settings.jsx:1041
+#: src/components/shortcuts-settings.jsx:1039
 msgid "Import…"
 msgstr "インポート…"
 
-#: src/components/shortcuts-settings.jsx:1065
+#: src/components/shortcuts-settings.jsx:1063
 msgid "Shortcuts copied"
 msgstr "ショートカットをコピーしました"
 
-#: src/components/shortcuts-settings.jsx:1068
+#: src/components/shortcuts-settings.jsx:1066
 msgid "Unable to copy shortcuts"
 msgstr "ショートカットをコピーできません"
 
-#: src/components/shortcuts-settings.jsx:1120
-msgid "Saving shortcuts to instance server…"
-msgstr "サーバーにショートカットを保存する…"
+#: src/components/shortcuts-settings.jsx:1118
+msgid "Saving shortcuts to server…"
+msgstr ""
 
-#: src/components/shortcuts-settings.jsx:1127
+#: src/components/shortcuts-settings.jsx:1125
 msgid "Shortcuts saved"
 msgstr "ショートカットを保存しました"
 
-#: src/components/shortcuts-settings.jsx:1132
+#: src/components/shortcuts-settings.jsx:1130
 msgid "Unable to save shortcuts"
 msgstr "ショートカットを保存できません"
 
-#: src/components/shortcuts-settings.jsx:1135
-msgid "Sync to instance server"
-msgstr "インスタンスサーバーに同期"
+#: src/components/shortcuts-settings.jsx:1133
+msgid "Sync to server"
+msgstr ""
 
-#: src/components/shortcuts-settings.jsx:1150
+#: src/components/shortcuts-settings.jsx:1148
 msgid "Shortcut settings copied"
 msgstr "ショートカット設定をコピーしました"
 
-#: src/components/shortcuts-settings.jsx:1153
+#: src/components/shortcuts-settings.jsx:1151
 msgid "Unable to copy shortcut settings"
 msgstr "ショートカットの設定をコピーできません"
 
-#: src/components/shortcuts-settings.jsx:1183
+#: src/components/shortcuts-settings.jsx:1181
 msgid "Share"
 msgstr "共有"
 
 #. placeholder {0}: shortcutsStr.length
-#: src/components/shortcuts-settings.jsx:1189
+#: src/components/shortcuts-settings.jsx:1187
 msgid "{0, plural, one {# character} other {# characters}}"
 msgstr "{0, plural, one {# 文字} other {# 文字}}"
 
-#: src/components/shortcuts-settings.jsx:1201
+#: src/components/shortcuts-settings.jsx:1199
 msgid "Raw Shortcuts JSON"
 msgstr "ショートカットのRaw JSON"
 
-#: src/components/shortcuts-settings.jsx:1214
-msgid "Import/export settings from/to instance server (Very experimental)"
-msgstr "インスタンスサーバーへの設定のインポート/エクスポート (非常に実験的)"
+#: src/components/shortcuts-settings.jsx:1212
+msgid "Import/export settings from/to server (Very experimental)"
+msgstr ""
 
 #: src/components/status.jsx:288
 msgid "Private posts cannot be quoted"
@@ -2616,7 +2615,7 @@ msgid "<0/> <1>boosted</1>"
 msgstr ""
 
 #: src/components/status.jsx:736
-msgid "Sorry, your current logged-in instance can't interact with this post from another instance."
+msgid "Sorry, your current logged-in server can't interact with this post from another server."
 msgstr ""
 
 #. placeholder {0}: username || acct
@@ -2650,12 +2649,12 @@ msgstr ""
 
 #: src/components/status.jsx:1098
 msgid "Reply…"
-msgstr ""
+msgstr "返信…"
 
 #: src/components/status.jsx:1107
 #: src/components/status.jsx:1116
 msgid "Reply all"
-msgstr ""
+msgstr "全員に返信"
 
 #: src/components/status.jsx:1110
 msgid "{mentionsCount, plural, other {# mentions}}"
@@ -2735,20 +2734,20 @@ msgstr ""
 
 #: src/components/status.jsx:1385
 msgid "Post text copied"
-msgstr ""
+msgstr "投稿テキストをコピーしました"
 
 #: src/components/status.jsx:1388
 msgid "Unable to copy post text"
-msgstr ""
+msgstr "投稿テキストをコピーできません"
 
 #: src/components/status.jsx:1394
 msgid "Copy post text"
-msgstr ""
+msgstr "投稿テキストをコピー"
 
 #. placeholder {0}: username || acct
 #: src/components/status.jsx:1412
 msgid "View post by <0>@{0}</0>"
-msgstr ""
+msgstr "<0>@{0}</0> さんの投稿を表示"
 
 #: src/components/status.jsx:1433
 msgid "Show Edit History"
@@ -2760,19 +2759,19 @@ msgstr "編集済み： {editedDateText}"
 
 #: src/components/status.jsx:1519
 msgid "Conversation unmuted"
-msgstr ""
+msgstr "会話のミュートを解除しました"
 
 #: src/components/status.jsx:1519
 msgid "Conversation muted"
-msgstr ""
+msgstr "会話をミュートしました"
 
 #: src/components/status.jsx:1525
 msgid "Unable to unmute conversation"
-msgstr ""
+msgstr "会話のミュートを解除できません"
 
 #: src/components/status.jsx:1526
 msgid "Unable to mute conversation"
-msgstr ""
+msgstr "会話をミュートできません"
 
 #: src/components/status.jsx:1535
 msgid "Unmute conversation"
@@ -2788,15 +2787,15 @@ msgstr ""
 
 #: src/components/status.jsx:1559
 msgid "Post pinned to profile"
-msgstr ""
+msgstr "プロフィールにピン留めされた投稿"
 
 #: src/components/status.jsx:1564
 msgid "Unable to unpin post"
-msgstr ""
+msgstr "ポストのピン留めを削除できません"
 
 #: src/components/status.jsx:1564
 msgid "Unable to pin post"
-msgstr ""
+msgstr "ポストをピン留めできません"
 
 #: src/components/status.jsx:1573
 msgid "Unpin from profile"
@@ -2979,15 +2978,15 @@ msgid "{index}/X"
 msgstr ""
 
 #: src/components/timeline.jsx:503
-#: src/pages/settings.jsx:1290
+#: src/pages/settings.jsx:1289
 msgid "New posts"
 msgstr "新しい投稿"
 
 #: src/components/timeline.jsx:604
 #: src/pages/home.jsx:228
 #: src/pages/notifications.jsx:897
-#: src/pages/status.jsx:1242
-#: src/pages/status.jsx:1716
+#: src/pages/status.jsx:1240
+#: src/pages/status.jsx:1714
 msgid "Try again"
 msgstr ""
 
@@ -3148,12 +3147,12 @@ msgstr "アカウント情報を取得できませんでした"
 
 #. placeholder {0}: accountInstance ? ( <> {' '} (<b>{punycode.toUnicode(accountInstance)}</b>) </> ) : null
 #: src/pages/account-statuses.jsx:585
-msgid "Switch to account's instance {0}"
-msgstr "このアカウントのインスタンス {0} の表示に切り替える"
+msgid "Switch to account's server {0}"
+msgstr ""
 
 #: src/pages/account-statuses.jsx:615
-msgid "Switch to my instance (<0>{currentInstance}</0>)"
-msgstr "自分のインスタンス (<0>{currentInstance}</0>) の表示に切り替える"
+msgid "Switch to my server (<0>{currentInstance}</0>)"
+msgstr ""
 
 #: src/pages/account-statuses.jsx:688
 msgid "Month"
@@ -3333,9 +3332,8 @@ msgid "Until the last catch-up ({0})"
 msgstr "前回のキャッチアップまで ({0})"
 
 #: src/pages/catchup.jsx:1159
-msgid "Note: your instance might only show a maximum of 800 posts in the Home timeline regardless of the time range. Could be less or more."
-msgstr "注：あなたのインスタンスでは時間範囲に関係なく、ホームタイムラインの最大800個のポストしか表示されない可能性があります。\n"
-"これより少ない場合も、多い場合もあります。"
+msgid "Note: your server might only show a maximum of 800 posts in the Home timeline regardless of the time range. Could be less or more."
+msgstr ""
 
 #: src/pages/catchup.jsx:1169
 msgid "Previously…"
@@ -3715,25 +3713,25 @@ msgstr ""
 #: src/pages/hashtag.jsx:492
 #: src/pages/public.jsx:141
 #: src/pages/trending.jsx:481
-msgid "Enter a new instance e.g. \"mastodon.social\""
+msgid "Enter a new server e.g. \"mastodon.social\""
 msgstr ""
 
 #: src/pages/hashtag.jsx:495
 #: src/pages/public.jsx:144
 #: src/pages/trending.jsx:484
-msgid "Invalid instance"
+msgid "Invalid server"
 msgstr ""
 
 #: src/pages/hashtag.jsx:509
 #: src/pages/public.jsx:158
 #: src/pages/trending.jsx:496
-msgid "Go to another instance…"
+msgid "Go to another server…"
 msgstr ""
 
 #: src/pages/hashtag.jsx:522
 #: src/pages/public.jsx:171
 #: src/pages/trending.jsx:507
-msgid "Go to my instance (<0>{currentInstance}</0>)"
+msgid "Go to my server (<0>{currentInstance}</0>)"
 msgstr ""
 
 #: src/pages/home.jsx:224
@@ -3785,7 +3783,7 @@ msgid "Failed to register application"
 msgstr ""
 
 #: src/pages/login.jsx:246
-msgid "instance domain"
+msgid "server domain"
 msgstr ""
 
 #: src/pages/login.jsx:271
@@ -3793,7 +3791,7 @@ msgid "e.g. “mastodon.social”"
 msgstr "例: “mastodon.social”"
 
 #: src/pages/login.jsx:282
-msgid "Failed to log in. Please try again or try another instance."
+msgid "Failed to log in. Please try again or try another server."
 msgstr ""
 
 #: src/pages/login.jsx:294
@@ -3859,7 +3857,7 @@ msgid "{0, plural, one {Announcement} other {Announcements}}"
 msgstr ""
 
 #: src/pages/notifications.jsx:680
-#: src/pages/settings.jsx:1278
+#: src/pages/settings.jsx:1277
 msgid "Follow requests"
 msgstr "フォローリクエスト"
 
@@ -4131,7 +4129,7 @@ msgid "Failed to update default visibility"
 msgstr ""
 
 #: src/pages/settings.jsx:354
-msgid "Synced to your instance server's settings. <0>Go to your instance ({instance}) for more settings.</0>"
+msgid "Synced to your server's settings. <0>Go to your server ({instance}) for more settings.</0>"
 msgstr ""
 
 #: src/pages/settings.jsx:369
@@ -4204,127 +4202,127 @@ msgid "⚠️⚠️⚠️ Very experimental.<0/>Stored in your own profile’s n
 msgstr ""
 
 #: src/pages/settings.jsx:656
-msgid "Note: This feature uses currently-logged-in instance server API."
+msgid "Note: This feature uses currently-logged-in server API."
 msgstr ""
 
-#: src/pages/settings.jsx:673
+#: src/pages/settings.jsx:672
 msgid "Cloak mode <0>(<1>Text</1> → <2>████</2>)</0>"
 msgstr ""
 
-#: src/pages/settings.jsx:682
+#: src/pages/settings.jsx:681
 msgid "Replace text as blocks, useful when taking screenshots, for privacy reasons."
 msgstr ""
 
-#: src/pages/settings.jsx:711
+#: src/pages/settings.jsx:710
 msgid "Install {CLIENT_NAME}"
 msgstr ""
 
-#: src/pages/settings.jsx:719
+#: src/pages/settings.jsx:718
 msgid "About"
 msgstr ""
 
-#: src/pages/settings.jsx:758
+#: src/pages/settings.jsx:757
 msgid "<0>Built</0> by <1>@cheeaun</1>"
 msgstr ""
 
-#: src/pages/settings.jsx:787
+#: src/pages/settings.jsx:786
 msgid "Sponsor"
 msgstr ""
 
-#: src/pages/settings.jsx:795
+#: src/pages/settings.jsx:794
 msgid "Donate"
 msgstr ""
 
-#: src/pages/settings.jsx:811
+#: src/pages/settings.jsx:810
 msgid "What's new"
 msgstr ""
 
-#: src/pages/settings.jsx:815
+#: src/pages/settings.jsx:814
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
 #. placeholder {0}: WEBSITE.replace(/https?:\/\//g, '').replace(/\/$/, '')
-#: src/pages/settings.jsx:822
+#: src/pages/settings.jsx:821
 msgid "<0>Site:</0> {0}"
 msgstr ""
 
 #. placeholder {0}: !__FAKE_COMMIT_HASH__ && ( <span class="ib insignificant"> ( <a href={`https://github.com/cheeaun/phanpy/commit/${__COMMIT_HASH__}`} target="_blank" rel="noopener" > <RelativeTime datetime={new Date(__BUILD_TIME__)} /> </a> ) </span> )
-#: src/pages/settings.jsx:829
+#: src/pages/settings.jsx:828
 msgid "<0>Version:</0> <1/> {0}"
 msgstr ""
 
-#: src/pages/settings.jsx:844
+#: src/pages/settings.jsx:843
 msgid "Version string copied"
 msgstr ""
 
-#: src/pages/settings.jsx:847
+#: src/pages/settings.jsx:846
 msgid "Unable to copy version string"
 msgstr ""
 
 #. Preview of one character, in largest size
 #. Preview of one character, in smallest size
-#: src/pages/settings.jsx:991
-#: src/pages/settings.jsx:1015
+#: src/pages/settings.jsx:990
+#: src/pages/settings.jsx:1014
 msgid "A"
 msgstr ""
 
-#: src/pages/settings.jsx:1175
-#: src/pages/settings.jsx:1180
+#: src/pages/settings.jsx:1174
+#: src/pages/settings.jsx:1179
 msgid "Failed to update subscription. Please try again."
 msgstr ""
 
-#: src/pages/settings.jsx:1186
+#: src/pages/settings.jsx:1185
 msgid "Failed to remove subscription. Please try again."
 msgstr ""
 
-#: src/pages/settings.jsx:1193
+#: src/pages/settings.jsx:1192
 msgid "Push Notifications (beta)"
 msgstr ""
 
-#: src/pages/settings.jsx:1215
+#: src/pages/settings.jsx:1214
 msgid "Push notifications are blocked. Please enable them in your browser settings."
 msgstr ""
 
 #. placeholder {0}: [ { value: 'all', label: t`anyone`, }, { value: 'followed', label: t`people I follow`, }, { value: 'follower', label: t`followers`, }, ].map((type) => ( <option value={type.value}>{type.label}</option> ))
-#: src/pages/settings.jsx:1224
+#: src/pages/settings.jsx:1223
 msgid "Allow from <0>{0}</0>"
 msgstr ""
 
-#: src/pages/settings.jsx:1233
+#: src/pages/settings.jsx:1232
 msgid "anyone"
 msgstr "誰でも"
 
-#: src/pages/settings.jsx:1237
+#: src/pages/settings.jsx:1236
 msgid "people I follow"
 msgstr "フォローしている人"
 
-#: src/pages/settings.jsx:1241
+#: src/pages/settings.jsx:1240
 msgid "followers"
 msgstr "フォロワー"
 
-#: src/pages/settings.jsx:1274
+#: src/pages/settings.jsx:1273
 msgid "Follows"
 msgstr "フォロー"
 
-#: src/pages/settings.jsx:1282
+#: src/pages/settings.jsx:1281
 msgid "Polls"
 msgstr "投票"
 
-#: src/pages/settings.jsx:1286
+#: src/pages/settings.jsx:1285
 msgid "Post edits"
 msgstr "投稿の編集"
 
-#: src/pages/settings.jsx:1307
+#: src/pages/settings.jsx:1306
 msgid "Push permission was not granted since your last login. You'll need to <0><1>log in</1> again to grant push permission</0>."
 msgstr ""
 
-#: src/pages/settings.jsx:1323
+#: src/pages/settings.jsx:1322
 msgid "NOTE: Push notifications only work for <0>one account</0>."
 msgstr ""
 
 #. js-lingui-explicit-id
 #: src/pages/status.jsx:791
-#: src/pages/status.jsx:1467
+#: src/pages/status.jsx:1465
 msgid "post.title"
 msgstr ""
 
@@ -4333,7 +4331,7 @@ msgid "You're not logged in. Interactions (reply, boost, etc) are not possible."
 msgstr ""
 
 #: src/pages/status.jsx:1088
-msgid "This post is from another instance (<0>{instance}</0>). Interactions (reply, boost, etc) are not possible."
+msgid "This post is from another server (<0>{instance}</0>). Interactions (reply, boost, etc) are not possible."
 msgstr ""
 
 #: src/pages/status.jsx:1116
@@ -4341,84 +4339,84 @@ msgid "Error: {e}"
 msgstr ""
 
 #: src/pages/status.jsx:1123
-msgid "Switch to my instance to enable interactions"
+msgid "Switch to my server to enable interactions"
 msgstr ""
 
-#: src/pages/status.jsx:1233
+#: src/pages/status.jsx:1231
 msgid "Unable to load replies."
 msgstr ""
 
-#: src/pages/status.jsx:1289
+#: src/pages/status.jsx:1287
 msgid "{months, plural, one {# month later} other {# months later}}"
 msgstr ""
 
-#: src/pages/status.jsx:1295
+#: src/pages/status.jsx:1293
 msgid "{years, plural, one {# year later} other {# years later}}"
 msgstr ""
 
-#: src/pages/status.jsx:1427
+#: src/pages/status.jsx:1425
 msgid "Back"
 msgstr ""
 
-#: src/pages/status.jsx:1458
+#: src/pages/status.jsx:1456
 msgid "Go to main post"
 msgstr ""
 
 #. placeholder {0}: ancestors.length
-#: src/pages/status.jsx:1481
+#: src/pages/status.jsx:1479
 msgid "{0} posts above ‒ Go to top"
 msgstr ""
 
-#: src/pages/status.jsx:1530
-#: src/pages/status.jsx:1593
+#: src/pages/status.jsx:1528
+#: src/pages/status.jsx:1591
 msgid "Switch to Side Peek view"
 msgstr ""
 
-#: src/pages/status.jsx:1594
+#: src/pages/status.jsx:1592
 msgid "Switch to Full view"
 msgstr ""
 
-#: src/pages/status.jsx:1612
+#: src/pages/status.jsx:1610
 msgid "Show all sensitive content"
 msgstr ""
 
-#: src/pages/status.jsx:1617
+#: src/pages/status.jsx:1615
 msgid "Experimental"
 msgstr ""
 
-#: src/pages/status.jsx:1626
+#: src/pages/status.jsx:1624
 msgid "Unable to switch"
 msgstr ""
 
 #. placeholder {0}: punycode.toUnicode( postInstance, )
-#: src/pages/status.jsx:1633
-msgid "Switch to post's instance ({0})"
+#: src/pages/status.jsx:1631
+msgid "Switch to post's server ({0})"
 msgstr ""
 
-#: src/pages/status.jsx:1636
-msgid "Switch to post's instance"
+#: src/pages/status.jsx:1634
+msgid "Switch to post's server"
 msgstr ""
 
-#: src/pages/status.jsx:1649
+#: src/pages/status.jsx:1647
 msgid "View Edit History Snapshots"
 msgstr ""
 
-#: src/pages/status.jsx:1707
+#: src/pages/status.jsx:1705
 msgid "Unable to load post"
 msgstr ""
 
 #. placeholder {0}: replies.length
 #. placeholder {1}: shortenNumber(replies.length)
-#: src/pages/status.jsx:1844
+#: src/pages/status.jsx:1842
 msgid "{0, plural, one {# reply} other {<0>{1}</0> replies}}"
 msgstr ""
 
 #. placeholder {0}: shortenNumber(totalComments)
-#: src/pages/status.jsx:1862
+#: src/pages/status.jsx:1860
 msgid "{totalComments, plural, one {# comment} other {<0>{0}</0> comments}}"
 msgstr ""
 
-#: src/pages/status.jsx:1884
+#: src/pages/status.jsx:1882
 msgid "View post with its replies"
 msgstr ""
 
@@ -4453,81 +4451,89 @@ msgstr ""
 msgid "No trending posts."
 msgstr ""
 
-#: src/pages/welcome.jsx:57
+#: src/pages/welcome.jsx:52
 msgid "A minimalistic opinionated Mastodon web client."
 msgstr "こだわりのあるミニマルな Mastodon Web クライアント"
 
-#: src/pages/welcome.jsx:68
+#: src/pages/welcome.jsx:63
 msgid "Log in with Mastodon"
 msgstr "Mastodon にログイン"
 
-#: src/pages/welcome.jsx:74
+#: src/pages/welcome.jsx:69
 msgid "Sign up"
 msgstr "登録"
 
-#: src/pages/welcome.jsx:81
+#: src/pages/welcome.jsx:76
 msgid "Connect your existing Mastodon/Fediverse account.<0/>Your credentials are not stored on this server."
 msgstr "あなたの Mastodon/Fediverse アカウントに接続します。<0/>認証情報はこのサーバーに保存されません。"
 
-#: src/pages/welcome.jsx:98
-msgid "<0>Built</0> by <1>@cheeaun</1>. <2>Privacy Policy</2>."
-msgstr "<0>開発者</0> <1>@cheeaun</1> <2>プライバシーポリシー</2>"
+#: src/pages/welcome.jsx:96
+msgid "Screenshot of Phanpy home timeline on mobile device"
+msgstr ""
 
-#: src/pages/welcome.jsx:129
+#: src/pages/welcome.jsx:113
+msgid "Screenshot of Phanpy home timeline on tablet device"
+msgstr ""
+
+#: src/pages/welcome.jsx:127
 msgid "Screenshot of Boosts Carousel"
 msgstr "ブーストのスライド表示のスクリーンショット"
 
-#: src/pages/welcome.jsx:133
+#: src/pages/welcome.jsx:134
 msgid "Boosts Carousel"
 msgstr "ブーストのスライド表示"
 
-#: src/pages/welcome.jsx:136
+#: src/pages/welcome.jsx:137
 msgid "Visually separate original posts and re-shared posts (boosted posts)."
 msgstr "オリジナルのポストとブーストされたポストを見分けやすく表示します。"
 
-#: src/pages/welcome.jsx:145
+#: src/pages/welcome.jsx:147
 msgid "Screenshot of Catch-up"
 msgstr ""
 
-#: src/pages/welcome.jsx:152
+#: src/pages/welcome.jsx:157
 msgid "A separate timeline for followings. Email-inspired interface to sort and filter posts."
 msgstr ""
 
-#: src/pages/welcome.jsx:161
+#: src/pages/welcome.jsx:167
 msgid "Screenshot of nested comments thread"
 msgstr "コメントスレッドのスクリーンショット"
 
-#: src/pages/welcome.jsx:165
+#: src/pages/welcome.jsx:174
 msgid "Nested comments thread"
 msgstr "コメントスレッド"
 
-#: src/pages/welcome.jsx:168
+#: src/pages/welcome.jsx:177
 msgid "Effortlessly follow conversations. Semi-collapsible replies."
 msgstr "会話をわかりやすく追えます。また、返信を折りたたみ可能。"
 
-#: src/pages/welcome.jsx:176
+#: src/pages/welcome.jsx:186
 msgid "Screenshot of multi-column UI"
 msgstr "マルチカラムUIのスクリーンショット"
 
-#: src/pages/welcome.jsx:180
+#: src/pages/welcome.jsx:193
 msgid "Single or multi-column"
 msgstr "シングル or マルチカラム"
 
-#: src/pages/welcome.jsx:183
+#: src/pages/welcome.jsx:196
 msgid "By default, single column for zen-mode seekers. Configurable multi-column for power users."
 msgstr "デフォルトではシングルモードですが、パワーユーザー向けにマルチカラムモードも設定できます。"
 
-#: src/pages/welcome.jsx:192
+#: src/pages/welcome.jsx:206
 msgid "Screenshot of multi-hashtag timeline with a form to add more hashtags"
 msgstr "マルチタグ・タイムラインにハッシュタグを追加するスクリーンショット"
 
-#: src/pages/welcome.jsx:196
+#: src/pages/welcome.jsx:213
 msgid "Multi-hashtag timeline"
 msgstr "マルチタグ・タイムライン"
 
-#: src/pages/welcome.jsx:199
+#: src/pages/welcome.jsx:216
 msgid "Up to 5 hashtags combined into a single timeline."
 msgstr "最大5つのハッシュタグを1つのタイムラインでまとめて表示できます。"
+
+#: src/pages/welcome.jsx:231
+msgid "<0>Built</0> by <1>@cheeaun</1>. <2>Privacy Policy</2>."
+msgstr "<0>開発者</0> <1>@cheeaun</1> <2>プライバシーポリシー</2>"
 
 #: src/utils/open-compose.js:24
 msgid "Looks like your browser is blocking popups."

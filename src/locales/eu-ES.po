@@ -8,7 +8,7 @@ msgstr ""
 "Language: eu\n"
 "Project-Id-Version: phanpy\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-01-22 14:42\n"
+"PO-Revision-Date: 2026-02-02 16:25\n"
 "Last-Translator: \n"
 "Language-Team: Basque\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -120,7 +120,7 @@ msgstr "Kopiatu helbidea"
 #: src/components/account-info.jsx:634
 #: src/components/related-actions.jsx:255
 #: src/components/related-actions.jsx:604
-#: src/components/shortcuts-settings.jsx:1083
+#: src/components/shortcuts-settings.jsx:1081
 msgid "QR code"
 msgstr "QR kodea"
 
@@ -223,8 +223,8 @@ msgstr "Originalak"
 #: src/pages/catchup.jsx:74
 #: src/pages/catchup.jsx:1575
 #: src/pages/catchup.jsx:2230
-#: src/pages/status.jsx:1189
-#: src/pages/status.jsx:1914
+#: src/pages/status.jsx:1187
+#: src/pages/status.jsx:1912
 #: src/pages/year-in-posts.jsx:1392
 msgid "Replies"
 msgstr "Erantzunak"
@@ -242,7 +242,7 @@ msgstr "Iruzkinak"
 #: src/pages/catchup.jsx:76
 #: src/pages/catchup.jsx:1577
 #: src/pages/catchup.jsx:2242
-#: src/pages/settings.jsx:1270
+#: src/pages/settings.jsx:1269
 #: src/pages/year-in-posts.jsx:1404
 msgid "Boosts"
 msgstr "Bultzadak"
@@ -295,7 +295,7 @@ msgstr "Ikusi bidalketen estatistikak"
 #: src/pages/notifications.jsx:941
 #: src/pages/scheduled-posts.jsx:288
 #: src/pages/settings.jsx:100
-#: src/pages/status.jsx:1653
+#: src/pages/status.jsx:1651
 msgid "Close"
 msgstr "Itxi"
 
@@ -328,11 +328,11 @@ msgstr "Zerrendarik ez."
 msgid "New list"
 msgstr "Zerrenda berria"
 
-#: src/components/background-service.jsx:158
+#: src/components/background-service.jsx:160
 msgid "Cloak mode disabled"
 msgstr "Estalki modua ezgaituta"
 
-#: src/components/background-service.jsx:158
+#: src/components/background-service.jsx:160
 msgid "Cloak mode enabled"
 msgstr "Estalki modua gaituta"
 
@@ -664,7 +664,7 @@ msgid "Custom emojis are not available on this server."
 msgstr "Emoji pertsonalizatuak ez daude erabilgarri zerbitzari honetan."
 
 #: src/components/drafts.jsx:62
-#: src/pages/settings.jsx:699
+#: src/pages/settings.jsx:698
 msgid "Unsent drafts"
 msgstr "Bidali gabeko zirriborroak"
 
@@ -837,7 +837,7 @@ msgstr "Kontuak"
 #: src/pages/list.jsx:321
 #: src/pages/notifications.jsx:921
 #: src/pages/search.jsx:562
-#: src/pages/status.jsx:1687
+#: src/pages/status.jsx:1685
 msgid "Show more…"
 msgstr "Erakutsi gehiago…"
 
@@ -912,7 +912,7 @@ msgid "Select file…"
 msgstr "Hautatu fitxategia…"
 
 #: src/components/import-export-accounts.jsx:151
-#: src/components/shortcuts-settings.jsx:1050
+#: src/components/shortcuts-settings.jsx:1048
 msgid "Export"
 msgstr "Esportatu"
 
@@ -976,7 +976,7 @@ msgstr "Ireki bidalketaren xehetasunak"
 
 #: src/components/keyboard-shortcuts-help.jsx:101
 msgid "Open media or post details"
-msgstr ""
+msgstr "Ireki multimediaren edo bidalketaren xehetasunak"
 
 #: src/components/keyboard-shortcuts-help.jsx:106
 msgid "Expand content warning or<0/>toggle expanded/collapsed thread"
@@ -1088,15 +1088,15 @@ msgstr "Joan jakinarazpenetara"
 
 #: src/components/keyboard-shortcuts-help.jsx:218
 msgid "Go to Settings"
-msgstr ""
+msgstr "Joan ezarpenetara"
 
 #: src/components/keyboard-shortcuts-help.jsx:222
 msgid "Go to Profile"
-msgstr ""
+msgstr "Joan profilera"
 
 #: src/components/keyboard-shortcuts-help.jsx:226
 msgid "Go to Bookmarks"
-msgstr ""
+msgstr "Joan laster-marketara"
 
 #: src/components/list-add-edit.jsx:41
 msgid "Edit list"
@@ -1183,7 +1183,7 @@ msgstr "Fitxategiaren deskribapena"
 #: src/pages/list.jsx:171
 #: src/pages/public.jsx:116
 #: src/pages/scheduled-posts.jsx:89
-#: src/pages/status.jsx:1554
+#: src/pages/status.jsx:1552
 #: src/pages/trending.jsx:474
 msgid "More"
 msgstr "Gehiago"
@@ -1383,7 +1383,7 @@ msgstr "Jarraitzen ditu"
 
 #: src/components/nav-menu.jsx:197
 #: src/pages/catchup.jsx:1003
-#: src/pages/welcome.jsx:149
+#: src/pages/welcome.jsx:154
 msgid "Catch-up"
 msgstr "Zer berri?"
 
@@ -1393,7 +1393,7 @@ msgstr "Zer berri?"
 #: src/pages/home.jsx:240
 #: src/pages/mentions.jsx:21
 #: src/pages/mentions.jsx:174
-#: src/pages/settings.jsx:1262
+#: src/pages/settings.jsx:1261
 #: src/pages/trending.jsx:384
 msgid "Mentions"
 msgstr "Aipamenak"
@@ -1437,7 +1437,7 @@ msgstr "Gehiago…"
 #: src/pages/catchup.jsx:2236
 #: src/pages/favourites.jsx:12
 #: src/pages/favourites.jsx:26
-#: src/pages/settings.jsx:1266
+#: src/pages/settings.jsx:1265
 msgid "Likes"
 msgstr "Gogokoak"
 
@@ -1479,7 +1479,7 @@ msgstr "Kontuak…"
 #: src/pages/login.jsx:33
 #: src/pages/login.jsx:227
 #: src/pages/status.jsx:1081
-#: src/pages/welcome.jsx:68
+#: src/pages/welcome.jsx:63
 msgid "Log in"
 msgstr "Hasi saioa"
 
@@ -1594,7 +1594,7 @@ msgstr "{account}(e)k iruzkindu duzun bidalketa bat editatu du."
 #. placeholder {0}: shortenNumber(count)
 #: src/components/notification.jsx:260
 msgid "{count, plural, =1 {{account} signed up.} other {<0><1>{0}</1> people</0> signed up.}}"
-msgstr ""
+msgstr "{count, plural, one {}=1 {{account} izena eman du.} other {<0><1>{0}</1> pertsonak</0> izena eman dute.}}"
 
 #: src/components/notification.jsx:274
 msgid "{account} reported {targetAccount}"
@@ -1708,7 +1708,7 @@ msgstr "Esteka ireki?"
 #: src/components/open-link-sheet.jsx:78
 #: src/components/post-embed-modal.jsx:232
 #: src/components/related-actions.jsx:565
-#: src/components/shortcuts-settings.jsx:1159
+#: src/components/shortcuts-settings.jsx:1157
 #: src/components/status.jsx:1468
 msgid "Copy"
 msgstr "Kopiatu"
@@ -1723,73 +1723,73 @@ msgstr "Partekatu…"
 msgid "Open"
 msgstr "Ireki"
 
-#: src/components/poll.jsx:128
+#: src/components/poll.jsx:159
 msgid "{optionVotesCount, plural, one {# vote} other {# votes}}"
 msgstr "{optionVotesCount, plural, one {boto #} other {# boto}}"
 
-#: src/components/poll.jsx:135
+#: src/components/poll.jsx:166
 msgid "Voted"
 msgstr "Bozkatu duzu"
 
-#: src/components/poll.jsx:156
-#: src/components/poll.jsx:350
-#: src/components/poll.jsx:354
+#: src/components/poll.jsx:190
+#: src/components/poll.jsx:387
+#: src/components/poll.jsx:391
 msgid "Hide results"
 msgstr "Ezkutatu emaitzak"
 
 #. placeholder {0}: options.length
-#: src/components/poll.jsx:161
-#: src/components/poll.jsx:251
-#: src/components/poll.jsx:267
+#: src/components/poll.jsx:195
+#: src/components/poll.jsx:288
+#: src/components/poll.jsx:304
 msgid "{0, plural, one {# choice} other {# choices}}"
-msgstr ""
+msgstr "{0, plural, one {aukera #} other {# aukera}}"
 
-#: src/components/poll.jsx:187
+#: src/components/poll.jsx:221
 msgid "Unable to vote in poll"
-msgstr ""
+msgstr "Ezin da bozketan botoa eman"
 
-#: src/components/poll.jsx:240
+#: src/components/poll.jsx:277
 msgid "Vote"
 msgstr "Bozkatu"
 
 #. placeholder {0}: shortenNumber(votesCount)
 #. placeholder {1}: shortenNumber(votesCount)
-#: src/components/poll.jsx:277
+#: src/components/poll.jsx:314
 msgid "{votesCount, plural, one {<0>{0}</0> vote} other {<1>{1}</1> votes}}"
 msgstr "{votesCount, plural, one {boto <0>{0}</0>} other {<1>{1}</1> boto}}"
 
 #. placeholder {0}: shortenNumber(votersCount)
 #. placeholder {1}: shortenNumber(votersCount)
-#: src/components/poll.jsx:298
+#: src/components/poll.jsx:335
 msgid "{votersCount, plural, one {<0>{0}</0> voter} other {<1>{1}</1> voters}}"
 msgstr "{votersCount, plural, one {hautesle <0>{0}</0>} other {<1>{1}</1> hautesle}}"
 
-#: src/components/poll.jsx:324
+#: src/components/poll.jsx:361
 msgid "Ended <0/>"
 msgstr "<0/> amaitu da"
 
-#: src/components/poll.jsx:329
+#: src/components/poll.jsx:366
 msgid "Ended"
 msgstr "Amaitu da"
 
-#: src/components/poll.jsx:333
+#: src/components/poll.jsx:370
 msgid "Ending <0/>"
 msgstr "<0/> amaituko da"
 
-#: src/components/poll.jsx:338
+#: src/components/poll.jsx:375
 msgid "Ending"
 msgstr "Amaiera-data"
 
-#: src/components/poll.jsx:350
-#: src/components/poll.jsx:354
+#: src/components/poll.jsx:387
+#: src/components/poll.jsx:391
 msgid "Show results"
 msgstr "Erakutsi emaitzak"
 
-#: src/components/poll.jsx:372
-#: src/components/poll.jsx:374
+#: src/components/poll.jsx:409
+#: src/components/poll.jsx:411
 #: src/pages/scheduled-posts.jsx:100
-#: src/pages/status.jsx:1543
-#: src/pages/status.jsx:1566
+#: src/pages/status.jsx:1541
+#: src/pages/status.jsx:1564
 msgid "Refresh"
 msgstr "Freskatu"
 
@@ -2054,7 +2054,7 @@ msgid "Search my posts"
 msgstr "Bilatu nire bidalketetan"
 
 #: src/components/related-actions.jsx:580
-#: src/components/shortcuts-settings.jsx:1177
+#: src/components/shortcuts-settings.jsx:1175
 #: src/components/status.jsx:1484
 msgid "Sharing doesn't seem to work."
 msgstr "Ez dirudi partekatzea dabilenik."
@@ -2326,8 +2326,8 @@ msgstr "Lokala bakarrik"
 #: src/components/shortcuts-settings.jsx:85
 #: src/components/shortcuts-settings.jsx:123
 #: src/pages/login.jsx:231
-msgid "Instance"
-msgstr "Instantzia"
+msgid "Server"
+msgstr "Zerbitzaria"
 
 #: src/components/shortcuts-settings.jsx:79
 #: src/components/shortcuts-settings.jsx:88
@@ -2470,118 +2470,118 @@ msgstr "Inportatu / Esportatu <0>Lasterbideak</0>"
 msgid "Paste shortcuts here"
 msgstr "Itsatsi lasterbideak hemen"
 
-#: src/components/shortcuts-settings.jsx:845
-msgid "Downloading saved shortcuts from instance server…"
+#: src/components/shortcuts-settings.jsx:844
+msgid "Downloading saved shortcuts from server…"
 msgstr "Gordetako lasterbideak zerbitzaritik deskargatzen…"
 
-#: src/components/shortcuts-settings.jsx:874
+#: src/components/shortcuts-settings.jsx:872
 msgid "Unable to download shortcuts"
 msgstr "Ezin dira lasterbideak deskargatu"
 
-#: src/components/shortcuts-settings.jsx:877
-msgid "Download shortcuts from instance server"
+#: src/components/shortcuts-settings.jsx:875
+msgid "Download shortcuts from server"
 msgstr "Deskargatu lasterbideak zerbitzaritik"
 
-#: src/components/shortcuts-settings.jsx:944
+#: src/components/shortcuts-settings.jsx:942
 msgid "* Exists in current shortcuts"
 msgstr "* Lasterbidea badago lehendik ere"
 
-#: src/components/shortcuts-settings.jsx:949
+#: src/components/shortcuts-settings.jsx:947
 msgid "List may not work if it's from a different account."
 msgstr "Litekeena da zerrendak ezin erabiltzea beste kontu batekoak badira."
 
-#: src/components/shortcuts-settings.jsx:959
+#: src/components/shortcuts-settings.jsx:957
 msgid "Invalid settings format"
 msgstr "Ezarpenen formatu baliogabea"
 
-#: src/components/shortcuts-settings.jsx:967
+#: src/components/shortcuts-settings.jsx:965
 msgid "Append to current shortcuts?"
 msgstr "Gehitu uneko lasterbideei?"
 
-#: src/components/shortcuts-settings.jsx:970
+#: src/components/shortcuts-settings.jsx:968
 msgid "Only shortcuts that don’t exist in current shortcuts will be appended."
 msgstr "Uneko lasterbideetan ez daudenak gehituko dira soilik."
 
-#: src/components/shortcuts-settings.jsx:992
+#: src/components/shortcuts-settings.jsx:990
 msgid "No new shortcuts to import"
 msgstr "Ez dago inportatzeko lasterbide berririk"
 
-#: src/components/shortcuts-settings.jsx:1007
+#: src/components/shortcuts-settings.jsx:1005
 msgid "Shortcuts imported. Exceeded max {SHORTCUTS_LIMIT}, so the rest are not imported."
 msgstr "Lasterbideak inportatu dira. {SHORTCUTS_LIMIT} muga gainditu da, gainerakoak ez dira inportatuko."
 
-#: src/components/shortcuts-settings.jsx:1008
-#: src/components/shortcuts-settings.jsx:1032
+#: src/components/shortcuts-settings.jsx:1006
+#: src/components/shortcuts-settings.jsx:1030
 msgid "Shortcuts imported"
 msgstr "Lasterbideak inportatu dira"
 
-#: src/components/shortcuts-settings.jsx:1018
+#: src/components/shortcuts-settings.jsx:1016
 msgid "Import & append…"
 msgstr "Inportatu eta gehitu…"
 
-#: src/components/shortcuts-settings.jsx:1026
+#: src/components/shortcuts-settings.jsx:1024
 msgid "Override current shortcuts?"
 msgstr "Uneko lasterbideak gainidatzi?"
 
-#: src/components/shortcuts-settings.jsx:1027
+#: src/components/shortcuts-settings.jsx:1025
 msgid "Import shortcuts?"
 msgstr "Lasterbideak inportatu?"
 
-#: src/components/shortcuts-settings.jsx:1041
+#: src/components/shortcuts-settings.jsx:1039
 msgid "or override…"
 msgstr "edo gainidatzi…"
 
-#: src/components/shortcuts-settings.jsx:1041
+#: src/components/shortcuts-settings.jsx:1039
 msgid "Import…"
 msgstr "Inportatu…"
 
-#: src/components/shortcuts-settings.jsx:1065
+#: src/components/shortcuts-settings.jsx:1063
 msgid "Shortcuts copied"
 msgstr "Lasterbideak kopiatu dira"
 
-#: src/components/shortcuts-settings.jsx:1068
+#: src/components/shortcuts-settings.jsx:1066
 msgid "Unable to copy shortcuts"
 msgstr "Ezin dira lasterbideak kopiatu"
 
-#: src/components/shortcuts-settings.jsx:1120
-msgid "Saving shortcuts to instance server…"
+#: src/components/shortcuts-settings.jsx:1118
+msgid "Saving shortcuts to server…"
 msgstr "Lasterbideak zerbitzarian gordetzen…"
 
-#: src/components/shortcuts-settings.jsx:1127
+#: src/components/shortcuts-settings.jsx:1125
 msgid "Shortcuts saved"
 msgstr "Lasterbideak gorde dira"
 
-#: src/components/shortcuts-settings.jsx:1132
+#: src/components/shortcuts-settings.jsx:1130
 msgid "Unable to save shortcuts"
 msgstr "Ezin dira lasterbideak gorde"
 
-#: src/components/shortcuts-settings.jsx:1135
-msgid "Sync to instance server"
-msgstr "Sinkronizatu zerbitzariarekin"
+#: src/components/shortcuts-settings.jsx:1133
+msgid "Sync to server"
+msgstr "Sinkronizatu zerbitzarira"
 
-#: src/components/shortcuts-settings.jsx:1150
+#: src/components/shortcuts-settings.jsx:1148
 msgid "Shortcut settings copied"
 msgstr "Lasterbideen ezarpenak kopiatu dira"
 
-#: src/components/shortcuts-settings.jsx:1153
+#: src/components/shortcuts-settings.jsx:1151
 msgid "Unable to copy shortcut settings"
 msgstr "Ezin dira lasterbideen ezarpenak kopiatu"
 
-#: src/components/shortcuts-settings.jsx:1183
+#: src/components/shortcuts-settings.jsx:1181
 msgid "Share"
 msgstr "Partekatu"
 
 #. placeholder {0}: shortcutsStr.length
-#: src/components/shortcuts-settings.jsx:1189
+#: src/components/shortcuts-settings.jsx:1187
 msgid "{0, plural, one {# character} other {# characters}}"
 msgstr "{0, plural, one {karaktere #} other {# karaktere}}"
 
-#: src/components/shortcuts-settings.jsx:1201
+#: src/components/shortcuts-settings.jsx:1199
 msgid "Raw Shortcuts JSON"
 msgstr "Lasterbideen JSON gordina"
 
-#: src/components/shortcuts-settings.jsx:1214
-msgid "Import/export settings from/to instance server (Very experimental)"
+#: src/components/shortcuts-settings.jsx:1212
+msgid "Import/export settings from/to server (Very experimental)"
 msgstr "Inportatu / Esportatu ezarpenak zerbitzarira / zerbitzaritik (oso esperimentala)"
 
 #: src/components/status.jsx:288
@@ -2616,8 +2616,8 @@ msgid "<0/> <1>boosted</1>"
 msgstr "<0/>(e)k <1>bultzatua</1>"
 
 #: src/components/status.jsx:736
-msgid "Sorry, your current logged-in instance can't interact with this post from another instance."
-msgstr "Barka baina saioa hasita duzun zerbitzariak ezin du interaktuatu beste instantzia batekoa den bidalketa honekin."
+msgid "Sorry, your current logged-in server can't interact with this post from another server."
+msgstr "Barka baina saioa hasita duzun zerbitzariak ezin du interaktuatu beste zerbitzari batekoa den bidalketa honekin."
 
 #. placeholder {0}: username || acct
 #: src/components/status.jsx:925
@@ -2979,15 +2979,15 @@ msgid "{index}/X"
 msgstr "X/{index}"
 
 #: src/components/timeline.jsx:503
-#: src/pages/settings.jsx:1290
+#: src/pages/settings.jsx:1289
 msgid "New posts"
 msgstr "Bidalketa berriak"
 
 #: src/components/timeline.jsx:604
 #: src/pages/home.jsx:228
 #: src/pages/notifications.jsx:897
-#: src/pages/status.jsx:1242
-#: src/pages/status.jsx:1716
+#: src/pages/status.jsx:1240
+#: src/pages/status.jsx:1714
 msgid "Try again"
 msgstr "Saiatu berriro"
 
@@ -3148,12 +3148,12 @@ msgstr "Ezin da kontuaren informazioa eskuratu"
 
 #. placeholder {0}: accountInstance ? ( <> {' '} (<b>{punycode.toUnicode(accountInstance)}</b>) </> ) : null
 #: src/pages/account-statuses.jsx:585
-msgid "Switch to account's instance {0}"
-msgstr "Aldatu kontuko instantziara {0}"
+msgid "Switch to account's server {0}"
+msgstr "Aldatu kontuko zerbitzarira {0}"
 
 #: src/pages/account-statuses.jsx:615
-msgid "Switch to my instance (<0>{currentInstance}</0>)"
-msgstr "Aldatu nire instantziara (<0>{currentInstance}</0>)"
+msgid "Switch to my server (<0>{currentInstance}</0>)"
+msgstr "Aldatu nire zerbitzarira(<0>{currentInstance}</0>)"
 
 #: src/pages/account-statuses.jsx:688
 msgid "Month"
@@ -3333,8 +3333,8 @@ msgid "Until the last catch-up ({0})"
 msgstr "Azken eguneraketara arte ({0})"
 
 #: src/pages/catchup.jsx:1159
-msgid "Note: your instance might only show a maximum of 800 posts in the Home timeline regardless of the time range. Could be less or more."
-msgstr "Oharra: litekeena da instantziak gehienez (gutxi gorabehera) 800 bidalketa erakustea hasierako denbora-lerroan, denbora tartea izaten dena izaten dela."
+msgid "Note: your server might only show a maximum of 800 posts in the Home timeline regardless of the time range. Could be less or more."
+msgstr "Oharra: litekeena da zerbitzariak gehienez (gutxi gorabehera) 800 bidalketa erakustea hasierako denbora-lerroan, denbora tartea izaten dena izaten dela."
 
 #: src/pages/catchup.jsx:1169
 msgid "Previously…"
@@ -3714,26 +3714,26 @@ msgstr "Gehitu lasterbideetara"
 #: src/pages/hashtag.jsx:492
 #: src/pages/public.jsx:141
 #: src/pages/trending.jsx:481
-msgid "Enter a new instance e.g. \"mastodon.social\""
-msgstr "Sartu instantzia berria, adib. \"mastodon.eus\""
+msgid "Enter a new server e.g. \"mastodon.social\""
+msgstr "Sartu zerbitzari berria, adib. \"mastodon.eus\""
 
 #: src/pages/hashtag.jsx:495
 #: src/pages/public.jsx:144
 #: src/pages/trending.jsx:484
-msgid "Invalid instance"
-msgstr "Instantzia baliogabea"
+msgid "Invalid server"
+msgstr "Zerbitzaria ez da baliozkoa"
 
 #: src/pages/hashtag.jsx:509
 #: src/pages/public.jsx:158
 #: src/pages/trending.jsx:496
-msgid "Go to another instance…"
-msgstr "Joan beste instantzia batera…"
+msgid "Go to another server…"
+msgstr "Joan beste zerbitzari batera…"
 
 #: src/pages/hashtag.jsx:522
 #: src/pages/public.jsx:171
 #: src/pages/trending.jsx:507
-msgid "Go to my instance (<0>{currentInstance}</0>)"
-msgstr "Joan nire instantziara (<0>{currentInstance}</0>)"
+msgid "Go to my server (<0>{currentInstance}</0>)"
+msgstr "Joan nire zerbitzarira (<0>{currentInstance}</0>)"
 
 #: src/pages/home.jsx:224
 msgid "Unable to fetch notifications."
@@ -3784,16 +3784,16 @@ msgid "Failed to register application"
 msgstr "Aplikazioa erregistratzeak huts egin du"
 
 #: src/pages/login.jsx:246
-msgid "instance domain"
-msgstr "instantziaren domeinua"
+msgid "server domain"
+msgstr "zerbitzariaren domeinua"
 
 #: src/pages/login.jsx:271
 msgid "e.g. “mastodon.social”"
 msgstr "adib. \"mastodon.eus\""
 
 #: src/pages/login.jsx:282
-msgid "Failed to log in. Please try again or try another instance."
-msgstr "Ezin da saioa hasi. Saiatu berriro edo saiatu beste instantzia batean."
+msgid "Failed to log in. Please try again or try another server."
+msgstr "Ezin da saioa hasi. Saiatu berriro edo saiatu beste zerbitzari batean."
 
 #: src/pages/login.jsx:294
 msgid "Continue with {selectedInstanceText}"
@@ -3858,7 +3858,7 @@ msgid "{0, plural, one {Announcement} other {Announcements}}"
 msgstr "{0, plural, one {Iragarpena} other {Iragarpenak}}"
 
 #: src/pages/notifications.jsx:680
-#: src/pages/settings.jsx:1278
+#: src/pages/settings.jsx:1277
 msgid "Follow requests"
 msgstr "Jarraipen-eskaerak"
 
@@ -4130,8 +4130,8 @@ msgid "Failed to update default visibility"
 msgstr "Defektuzko ikusgaitasunaren eguneraketak huts egin du"
 
 #: src/pages/settings.jsx:354
-msgid "Synced to your instance server's settings. <0>Go to your instance ({instance}) for more settings.</0>"
-msgstr "Zure zerbitzariko ezarpenekin sinkronizatu da. <0>Joan zure instantziara ({instance}) ezarpen gehiagorako.</0>"
+msgid "Synced to your server's settings. <0>Go to your server ({instance}) for more settings.</0>"
+msgstr "Zure zerbitzariko ezarpenekin sinkronizatu da. <0>Joan zure zerbitzarira ({instance}) ezarpen gehiagorako.</0>"
 
 #: src/pages/settings.jsx:369
 msgid "Experiments"
@@ -4203,127 +4203,127 @@ msgid "⚠️⚠️⚠️ Very experimental.<0/>Stored in your own profile’s n
 msgstr "⚠️⚠️⚠️ Oso esperimentala.<0/>Zure profileko oharretan gordetzen da. Profileko oharrak (pribatuak) beste profil batzuei buruzko oharretarako erabiltzen dira nagusiki, eta norberaren profilean ezkutatuta daude."
 
 #: src/pages/settings.jsx:656
-msgid "Note: This feature uses currently-logged-in instance server API."
+msgid "Note: This feature uses currently-logged-in server API."
 msgstr "Oharra: ezaugarri honek saio hasita duzun zerbitzariaren APIa darabil."
 
-#: src/pages/settings.jsx:673
+#: src/pages/settings.jsx:672
 msgid "Cloak mode <0>(<1>Text</1> → <2>████</2>)</0>"
 msgstr "Eskalki modua <0>(<1>Testua</1> → <2>████</2>)</0>"
 
-#: src/pages/settings.jsx:682
+#: src/pages/settings.jsx:681
 msgid "Replace text as blocks, useful when taking screenshots, for privacy reasons."
 msgstr "Testua blokeekin ordezkatzen du, pantaila-argazkiak egitean aproposa pribatutasun arrazoiengatik."
 
-#: src/pages/settings.jsx:711
+#: src/pages/settings.jsx:710
 msgid "Install {CLIENT_NAME}"
 msgstr "Instalatu {CLIENT_NAME}"
 
-#: src/pages/settings.jsx:719
+#: src/pages/settings.jsx:718
 msgid "About"
 msgstr "Honi buruz"
 
-#: src/pages/settings.jsx:758
+#: src/pages/settings.jsx:757
 msgid "<0>Built</0> by <1>@cheeaun</1>"
 msgstr "<1>@cheeaun</1>ek <0>sortua</0>"
 
-#: src/pages/settings.jsx:787
+#: src/pages/settings.jsx:786
 msgid "Sponsor"
 msgstr "Eman babesa"
 
-#: src/pages/settings.jsx:795
+#: src/pages/settings.jsx:794
 msgid "Donate"
 msgstr "Egin dohaintza"
 
-#: src/pages/settings.jsx:811
+#: src/pages/settings.jsx:810
 msgid "What's new"
 msgstr "Nobedadeak"
 
-#: src/pages/settings.jsx:815
+#: src/pages/settings.jsx:814
 msgid "Privacy Policy"
 msgstr "Pribatutasun politika"
 
 #. placeholder {0}: WEBSITE.replace(/https?:\/\//g, '').replace(/\/$/, '')
-#: src/pages/settings.jsx:822
+#: src/pages/settings.jsx:821
 msgid "<0>Site:</0> {0}"
 msgstr "<0>Gunea:</0> {0}"
 
 #. placeholder {0}: !__FAKE_COMMIT_HASH__ && ( <span class="ib insignificant"> ( <a href={`https://github.com/cheeaun/phanpy/commit/${__COMMIT_HASH__}`} target="_blank" rel="noopener" > <RelativeTime datetime={new Date(__BUILD_TIME__)} /> </a> ) </span> )
-#: src/pages/settings.jsx:829
+#: src/pages/settings.jsx:828
 msgid "<0>Version:</0> <1/> {0}"
 msgstr "<0>Bertsioa:</0> <1/> {0}"
 
-#: src/pages/settings.jsx:844
+#: src/pages/settings.jsx:843
 msgid "Version string copied"
 msgstr "Bertsioaren haria kopiatuta"
 
-#: src/pages/settings.jsx:847
+#: src/pages/settings.jsx:846
 msgid "Unable to copy version string"
 msgstr "Ezin da bertsioaren haria kopiatu"
 
 #. Preview of one character, in largest size
 #. Preview of one character, in smallest size
-#: src/pages/settings.jsx:991
-#: src/pages/settings.jsx:1015
+#: src/pages/settings.jsx:990
+#: src/pages/settings.jsx:1014
 msgid "A"
 msgstr "A"
 
-#: src/pages/settings.jsx:1175
-#: src/pages/settings.jsx:1180
+#: src/pages/settings.jsx:1174
+#: src/pages/settings.jsx:1179
 msgid "Failed to update subscription. Please try again."
 msgstr "Ezin da harpidetza eguneratu. Saiatu berriro."
 
-#: src/pages/settings.jsx:1186
+#: src/pages/settings.jsx:1185
 msgid "Failed to remove subscription. Please try again."
 msgstr "Ezin da harpidetza kendu. Saiatu berriro."
 
-#: src/pages/settings.jsx:1193
+#: src/pages/settings.jsx:1192
 msgid "Push Notifications (beta)"
 msgstr "Push jakinarazpenak (beta)"
 
-#: src/pages/settings.jsx:1215
+#: src/pages/settings.jsx:1214
 msgid "Push notifications are blocked. Please enable them in your browser settings."
 msgstr "Push jakinarazpenak blokeatuta daude. Gaitu itzazu nabigatzaileko ezarpenetan."
 
 #. placeholder {0}: [ { value: 'all', label: t`anyone`, }, { value: 'followed', label: t`people I follow`, }, { value: 'follower', label: t`followers`, }, ].map((type) => ( <option value={type.value}>{type.label}</option> ))
-#: src/pages/settings.jsx:1224
+#: src/pages/settings.jsx:1223
 msgid "Allow from <0>{0}</0>"
 msgstr "Baimendu <0>{0}</0>(r)en"
 
-#: src/pages/settings.jsx:1233
+#: src/pages/settings.jsx:1232
 msgid "anyone"
 msgstr "edonor"
 
-#: src/pages/settings.jsx:1237
+#: src/pages/settings.jsx:1236
 msgid "people I follow"
 msgstr "jarraitzen diodan jendea"
 
-#: src/pages/settings.jsx:1241
+#: src/pages/settings.jsx:1240
 msgid "followers"
 msgstr "jarraitzaile"
 
-#: src/pages/settings.jsx:1274
+#: src/pages/settings.jsx:1273
 msgid "Follows"
 msgstr "Jarraitzen die"
 
-#: src/pages/settings.jsx:1282
+#: src/pages/settings.jsx:1281
 msgid "Polls"
 msgstr "Bozketak"
 
-#: src/pages/settings.jsx:1286
+#: src/pages/settings.jsx:1285
 msgid "Post edits"
 msgstr "Bidalketen edizioak"
 
-#: src/pages/settings.jsx:1307
+#: src/pages/settings.jsx:1306
 msgid "Push permission was not granted since your last login. You'll need to <0><1>log in</1> again to grant push permission</0>."
 msgstr "Ez da push baimenik eman saioa azkenekoz hasi zenuenetik. <0><1>Hasi saioa</1> berriro baimentzeko</0>."
 
-#: src/pages/settings.jsx:1323
+#: src/pages/settings.jsx:1322
 msgid "NOTE: Push notifications only work for <0>one account</0>."
 msgstr "Oharra: push jakinarazpenak <0>kontu bakarrarentzat</0> dabiltza."
 
 #. js-lingui-explicit-id
 #: src/pages/status.jsx:791
-#: src/pages/status.jsx:1467
+#: src/pages/status.jsx:1465
 msgid "post.title"
 msgstr "Bidalketa"
 
@@ -4332,92 +4332,92 @@ msgid "You're not logged in. Interactions (reply, boost, etc) are not possible."
 msgstr "Ez duzu saiorik hasi. Ezin duzu interaktuatu (erantzun, bultzatu...)"
 
 #: src/pages/status.jsx:1088
-msgid "This post is from another instance (<0>{instance}</0>). Interactions (reply, boost, etc) are not possible."
-msgstr "Bidalketa hau beste instantzia batekoa da (<0>{instance}</0>). Interakzioak (erantzunak, bultzadak, etab.) ez dira posible."
+msgid "This post is from another server (<0>{instance}</0>). Interactions (reply, boost, etc) are not possible."
+msgstr "Bidalketa hau beste zerbitzari batekoa da (<0>{instance}</0>). Interakzioak (erantzunak, bultzadak, etab.) ez dira posible."
 
 #: src/pages/status.jsx:1116
 msgid "Error: {e}"
 msgstr "Errorea: {e}"
 
 #: src/pages/status.jsx:1123
-msgid "Switch to my instance to enable interactions"
-msgstr "Aldatu nire instantziara interakzioak gaitzeko"
+msgid "Switch to my server to enable interactions"
+msgstr "Aldatu nire zerbitzarira interakzioak gaitzeko"
 
-#: src/pages/status.jsx:1233
+#: src/pages/status.jsx:1231
 msgid "Unable to load replies."
 msgstr "Ezin dira erantzunak kargatu."
 
-#: src/pages/status.jsx:1289
+#: src/pages/status.jsx:1287
 msgid "{months, plural, one {# month later} other {# months later}}"
 msgstr "{months, plural, one {hilabete geroago} other {# hilabete geroago}}"
 
-#: src/pages/status.jsx:1295
+#: src/pages/status.jsx:1293
 msgid "{years, plural, one {# year later} other {# years later}}"
 msgstr "{years, plural, one {urtebete geroago} other {# urte geroago}}"
 
-#: src/pages/status.jsx:1427
+#: src/pages/status.jsx:1425
 msgid "Back"
 msgstr "Atzera"
 
-#: src/pages/status.jsx:1458
+#: src/pages/status.jsx:1456
 msgid "Go to main post"
 msgstr "Joan bidalketa nagusira"
 
 #. placeholder {0}: ancestors.length
-#: src/pages/status.jsx:1481
+#: src/pages/status.jsx:1479
 msgid "{0} posts above ‒ Go to top"
 msgstr "{0} bidalketa goian ‒ Joan gora"
 
-#: src/pages/status.jsx:1530
-#: src/pages/status.jsx:1593
+#: src/pages/status.jsx:1528
+#: src/pages/status.jsx:1591
 msgid "Switch to Side Peek view"
 msgstr "Aldatu gainbegirada bistara"
 
-#: src/pages/status.jsx:1594
+#: src/pages/status.jsx:1592
 msgid "Switch to Full view"
 msgstr "Aldatu bista osora"
 
-#: src/pages/status.jsx:1612
+#: src/pages/status.jsx:1610
 msgid "Show all sensitive content"
 msgstr "Erakutsi eduki hunkigarri guztia"
 
-#: src/pages/status.jsx:1617
+#: src/pages/status.jsx:1615
 msgid "Experimental"
 msgstr "Esperimentala"
 
-#: src/pages/status.jsx:1626
+#: src/pages/status.jsx:1624
 msgid "Unable to switch"
 msgstr "Ezin da aldatu"
 
 #. placeholder {0}: punycode.toUnicode( postInstance, )
-#: src/pages/status.jsx:1633
-msgid "Switch to post's instance ({0})"
-msgstr "Aldatu bidalketaren instantziara ({0})"
+#: src/pages/status.jsx:1631
+msgid "Switch to post's server ({0})"
+msgstr "Aldatu bidalketaren zerbitzarira ({0})"
 
-#: src/pages/status.jsx:1636
-msgid "Switch to post's instance"
-msgstr "Aldatu bidalketaren instantziara"
+#: src/pages/status.jsx:1634
+msgid "Switch to post's server"
+msgstr "Aldatu bidalketaren zerbitzarira"
 
-#: src/pages/status.jsx:1649
+#: src/pages/status.jsx:1647
 msgid "View Edit History Snapshots"
 msgstr "Ikusi edizio-historia"
 
-#: src/pages/status.jsx:1707
+#: src/pages/status.jsx:1705
 msgid "Unable to load post"
 msgstr "Ezin da bidalketa kargatu"
 
 #. placeholder {0}: replies.length
 #. placeholder {1}: shortenNumber(replies.length)
-#: src/pages/status.jsx:1844
+#: src/pages/status.jsx:1842
 msgid "{0, plural, one {# reply} other {<0>{1}</0> replies}}"
 msgstr "{0, plural, one {erantzun #} other {<0>{1}</0> erantzun}}"
 
 #. placeholder {0}: shortenNumber(totalComments)
-#: src/pages/status.jsx:1862
+#: src/pages/status.jsx:1860
 msgid "{totalComments, plural, one {# comment} other {<0>{0}</0> comments}}"
 msgstr "{totalComments, plural, one {iruzkin #} other {<0>{0}</0> iruzkin}}"
 
-#: src/pages/status.jsx:1884
+#: src/pages/status.jsx:1882
 msgid "View post with its replies"
 msgstr "Ikusi bidalketa eta erantzunak"
 
@@ -4452,81 +4452,89 @@ msgstr "Bogan dauden bidalketak"
 msgid "No trending posts."
 msgstr "Ez dago bogadn dagoen joerarik."
 
-#: src/pages/welcome.jsx:57
+#: src/pages/welcome.jsx:52
 msgid "A minimalistic opinionated Mastodon web client."
 msgstr "Mastodon erabiltzeko web-bezero minimalista eta aparta."
 
-#: src/pages/welcome.jsx:68
+#: src/pages/welcome.jsx:63
 msgid "Log in with Mastodon"
 msgstr "Hasi saioa Mastodon-ekin"
 
-#: src/pages/welcome.jsx:74
+#: src/pages/welcome.jsx:69
 msgid "Sign up"
 msgstr "Eman izena"
 
-#: src/pages/welcome.jsx:81
+#: src/pages/welcome.jsx:76
 msgid "Connect your existing Mastodon/Fediverse account.<0/>Your credentials are not stored on this server."
 msgstr "Konektatu zure Mastodon / Fedibertsoko kontua.<0/>Zure egiaztagiriak ez dira zerbitzari honetan gordetzen."
 
-#: src/pages/welcome.jsx:98
-msgid "<0>Built</0> by <1>@cheeaun</1>. <2>Privacy Policy</2>."
-msgstr "<1>@cheeaun</1>ek <0>sortua</0>. <2>Pribatutasun politika</2>."
+#: src/pages/welcome.jsx:96
+msgid "Screenshot of Phanpy home timeline on mobile device"
+msgstr "Phanpy-ren hasierako denbora-lerroaren pantaila-argazkia mugikor batean"
 
-#: src/pages/welcome.jsx:129
+#: src/pages/welcome.jsx:113
+msgid "Screenshot of Phanpy home timeline on tablet device"
+msgstr "Phanpy-ren hasierako denbora-lerroaren pantaila-argazkia tableta batean"
+
+#: src/pages/welcome.jsx:127
 msgid "Screenshot of Boosts Carousel"
 msgstr "Bultzaden karruselaren pantaila-argazkia"
 
-#: src/pages/welcome.jsx:133
+#: src/pages/welcome.jsx:134
 msgid "Boosts Carousel"
 msgstr "Bultzaden karrusela"
 
-#: src/pages/welcome.jsx:136
+#: src/pages/welcome.jsx:137
 msgid "Visually separate original posts and re-shared posts (boosted posts)."
 msgstr "Bereizi bisualki bidalketa originalak eta partekatutakoak (bultzadak)."
 
-#: src/pages/welcome.jsx:145
+#: src/pages/welcome.jsx:147
 msgid "Screenshot of Catch-up"
 msgstr "Zer berri?-ren pantaila-argazkia"
 
-#: src/pages/welcome.jsx:152
+#: src/pages/welcome.jsx:157
 msgid "A separate timeline for followings. Email-inspired interface to sort and filter posts."
 msgstr "Jarraitzen diezunen denbora-lerro bereizia. Posta elektronikoan oinarritutako interfazea bidalketak sailkatu eta iragazteko."
 
-#: src/pages/welcome.jsx:161
+#: src/pages/welcome.jsx:167
 msgid "Screenshot of nested comments thread"
 msgstr "Habiratutako iruzkinen hariaren pantaila-argazkia"
 
-#: src/pages/welcome.jsx:165
+#: src/pages/welcome.jsx:174
 msgid "Nested comments thread"
 msgstr "Habiratutako iruzkinen haria"
 
-#: src/pages/welcome.jsx:168
+#: src/pages/welcome.jsx:177
 msgid "Effortlessly follow conversations. Semi-collapsible replies."
 msgstr "Jarraitu elkarrizketak arazorik gabe. Erantzunak tolesten dira."
 
-#: src/pages/welcome.jsx:176
+#: src/pages/welcome.jsx:186
 msgid "Screenshot of multi-column UI"
 msgstr "Zutabe anitzeko interfazearen pantaila-argazkia"
 
-#: src/pages/welcome.jsx:180
+#: src/pages/welcome.jsx:193
 msgid "Single or multi-column"
 msgstr "Nahi beste zutabe"
 
-#: src/pages/welcome.jsx:183
+#: src/pages/welcome.jsx:196
 msgid "By default, single column for zen-mode seekers. Configurable multi-column for power users."
 msgstr "Defektuz, zutabe bakarra ZEN antolaketa nahi dutenentzako. Zutabe gehiago konfiguratu daitezke erabilera aurreraturako."
 
-#: src/pages/welcome.jsx:192
+#: src/pages/welcome.jsx:206
 msgid "Screenshot of multi-hashtag timeline with a form to add more hashtags"
 msgstr "Traola anitzeko denbora-lerroaren pantaila-argazkia, traola gehiago gehitzeko inprimakiarekin"
 
-#: src/pages/welcome.jsx:196
+#: src/pages/welcome.jsx:213
 msgid "Multi-hashtag timeline"
 msgstr "Traola anitzeko denbora-lerroa"
 
-#: src/pages/welcome.jsx:199
+#: src/pages/welcome.jsx:216
 msgid "Up to 5 hashtags combined into a single timeline."
 msgstr "Denbora-lerro bakarrean 5 traola ere batu daitezke."
+
+#: src/pages/welcome.jsx:231
+msgid "<0>Built</0> by <1>@cheeaun</1>. <2>Privacy Policy</2>."
+msgstr "<1>@cheeaun</1>ek <0>sortua</0>. <2>Pribatutasun politika</2>."
 
 #: src/utils/open-compose.js:24
 msgid "Looks like your browser is blocking popups."

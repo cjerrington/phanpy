@@ -498,7 +498,7 @@ function Status({
   if (mediaFirst && hasMediaAttachments) size = 's';
 
   const currentAccount = getCurrentAccID();
-  const isSelf = currentAccount && currentAccount === accountId;
+  const isSelf = currentAccount && currentAccount == accountId;
 
   const filterContext = useContext(FilterContext);
   const filterInfo =
@@ -733,7 +733,7 @@ function Status({
     0,
   );
 
-  const unauthInteractionErrorMessage = t`Sorry, your current logged-in instance can't interact with this post from another instance.`;
+  const unauthInteractionErrorMessage = t`Sorry, your current logged-in server can't interact with this post from another server.`;
 
   const textWeight = useCallback(
     () =>
