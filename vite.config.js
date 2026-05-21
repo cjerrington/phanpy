@@ -82,6 +82,14 @@ export default defineConfig({
       awaitWriteFinish: {
         pollInterval: 1000,
       },
+      // Ignore specific folders to prevent auto-refresh
+      ignored: [
+        '**/src/iconify-icons/**',
+        // Add folder paths here (glob patterns)
+        // Example: '**/node_modules/**',
+        // Example: '**/dist/**',
+        // Example: '**/scripts/**',
+      ],
     },
   },
   css: {
@@ -301,7 +309,7 @@ export default defineConfig({
   build: {
     sourcemap: true,
     cssCodeSplit: false,
-    rollupOptions: {
+    rolldownOptions: {
       treeshake: false,
       external: ['@xmldom/xmldom'], // exifreader's optional dependency, not needed
       input: {

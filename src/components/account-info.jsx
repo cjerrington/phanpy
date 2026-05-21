@@ -7,6 +7,7 @@ import {
   useCallback,
   useEffect,
   useMemo,
+  useReducer,
   useRef,
   useState,
 } from 'preact/hooks';
@@ -147,6 +148,7 @@ function AccountInfo({
   const [uiState, setUIState] = useState('default');
   const isString = typeof account === 'string';
   const [info, setInfo] = useState(isString ? null : account);
+  const [reloadCount, reload] = useReducer((c) => c + 1, 0);
 
   const sameCurrentInstance = useMemo(
     () => instance === currentInstance,
@@ -171,12 +173,13 @@ function AccountInfo({
         setUIState('error');
       }
     })();
-  }, [isString, account, fetchAccount]);
+  }, [isString, account, fetchAccount, reloadCount]);
 
   const {
     acct,
     avatar,
     avatarStatic,
+    avatarDescription,
     bot,
     createdAt,
     displayName,
@@ -187,6 +190,7 @@ function AccountInfo({
     group,
     // header,
     // headerStatic,
+    headerDescription,
     id,
     lastStatusAt,
     locked,
@@ -408,6 +412,11 @@ function AccountInfo({
                 </a>
               </p>
             )}
+            {isString && (
+              <button type="button" onClick={reload}>
+                <Trans>Try again</Trans>
+              </button>
+            )}
           </div>
         )}
         {uiState === 'loading' ? (
@@ -477,7 +486,7 @@ function AccountInfo({
               {!!header && !/missing\.png$/.test(header) && (
                 <img
                   src={header}
-                  alt=""
+                  alt={headerDescription || ''}
                   class={`header-banner ${
                     headerIsAvatar ? 'header-is-avatar' : ''
                   }`}
@@ -498,6 +507,16 @@ function AccountInfo({
                   crossOrigin="anonymous"
                   onLoad={(e) => {
                     e.target.classList.add('loaded');
+                    const { width, height } = e.target;
+                    // 25px per second (rough estimate)
+                    // Clamp between 10s and 120s
+                    e.target.style.setProperty(
+                      '--anim-duration',
+                      `${Math.min(
+                        Math.max(Math.max(width, height) / 25, 10),
+                        120,
+                      )}s`,
+                    );
                     try {
                       // Get color from four corners of image
                       const canvas = window.OffscreenCanvas
@@ -506,8 +525,8 @@ function AccountInfo({
                       const ctx = canvas.getContext('2d', {
                         willReadFrequently: true,
                       });
-                      canvas.width = e.target.width;
-                      canvas.height = e.target.height;
+                      canvas.width = width;
+                      canvas.height = height;
                       ctx.imageSmoothingEnabled = false;
                       ctx.drawImage(e.target, 0, 0);
                       // const colors = [
@@ -589,6 +608,7 @@ function AccountInfo({
                           account={info}
                           instance={instance}
                           avatarSize="xxxl"
+                          avatarDescription={avatarDescription}
                           onClick={() => {}}
                         />
                       </div>
@@ -648,6 +668,7 @@ function AccountInfo({
                             {
                               type: 'image',
                               url: avatarStatic,
+                              description: avatarDescription,
                             },
                           ],
                         };
@@ -666,6 +687,7 @@ function AccountInfo({
                               {
                                 type: 'image',
                                 url: headerStatic,
+                                description: headerDescription,
                               },
                             ],
                           };
@@ -1136,8 +1158,20 @@ function AccountInfo({
           <EditProfileSheet
             onClose={({ state, account } = {}) => {
               setShowEditProfile(false);
-              if (state === 'success' && account) {
-                onProfileUpdate(account);
+              if (state === 'success') {
+                if (account) {
+                  onProfileUpdate(account);
+                } else {
+                  (async () => {
+                    try {
+                      const updatedAccount =
+                        await masto.v1.accounts.verifyCredentials();
+                      onProfileUpdate(updatedAccount);
+                    } catch (e) {
+                      console.error(e);
+                    }
+                  })();
+                }
               }
             }}
           />
