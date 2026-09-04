@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import punycode from 'punycode/';
 
 import { api } from '../utils/api';
+import { isSupported as collectionsSupported } from '../utils/collections';
 import i18nDuration from '../utils/i18n-duration';
 import isSearchEnabled from '../utils/is-search-enabled';
 import niceDateTime from '../utils/nice-date-time';
@@ -17,8 +18,10 @@ import supports from '../utils/supports';
 import { handleScannerClick } from './account-info';
 import AddRemoveListsSheet from './add-remove-lists-sheet';
 import Icon from './icon';
+import Link from './link';
 import Loader from './loader';
 import MenuConfirm from './menu-confirm';
+import MenuLink from './menu-link';
 import Menu2 from './menu2';
 import Modal from './modal';
 import PrivateNoteSheet from './private-note-sheet';
@@ -93,9 +96,12 @@ function RelatedActions({
   const [currentInfo, setCurrentInfo] = useState(null);
   const [isSelf, setIsSelf] = useState(false);
 
-  const acctWithInstance = acct.includes('@') ? acct : `${acct}@${instance}`;
+  const acctWithInstance = punycode.toUnicode(
+    acct.includes('@') ? acct : `${acct}@${instance}`,
+  );
 
   const supportsEndorsements = supports('@mastodon/endorsements');
+  const supportsCollections = collectionsSupported();
 
   useEffect(() => {
     if (info) {
@@ -454,6 +460,16 @@ function RelatedActions({
                       </span>
                     </MenuItem>
                   )}
+                {supportsCollections && (
+                  <MenuLink
+                    to={`/${instance || currentInstance}/a/${
+                      currentInfo?.id || id
+                    }/c`}
+                  >
+                    <Icon icon="collections" />
+                    <Trans>Show collections</Trans>
+                  </MenuLink>
+                )}
                 {/* Add/remove from lists is only possible if following the account */}
                 {following && (
                   <MenuItem
@@ -504,6 +520,16 @@ function RelatedActions({
                     </MenuItem>
                   </>
                 )}
+                {supportsCollections && (
+                  <MenuLink
+                    to={`/${instance || currentInstance}/a/${
+                      currentInfo?.id || id
+                    }/c`}
+                  >
+                    <Icon icon="collections" />
+                    <Trans>Show collections</Trans>
+                  </MenuLink>
+                )}
                 {((searchEnabled && isSelf) ||
                   (supportsEndorsements && !renderEndorsements)) && (
                   <MenuDivider />
@@ -527,7 +553,10 @@ function RelatedActions({
                 <Trans>Copy handle</Trans>
                 <br />
                 <span class="more-insignificant bidi-isolate">
-                  @{currentInfo?.acct || acctWithInstance}
+                  @
+                  {currentInfo?.acct
+                    ? punycode.toUnicode(currentInfo.acct)
+                    : acctWithInstance}
                 </span>
               </small>
             </MenuItem>
@@ -582,7 +611,7 @@ function RelatedActions({
                   text: url,
                   arena: avatarStatic,
                   backgroundMask: headerStatic,
-                  caption: acct.includes('@') ? acct : `${acct}@${instance}`,
+                  caption: acctWithInstance,
                   onScannerClick: handleScannerClick,
                 };
               }}
@@ -859,7 +888,7 @@ function RelatedActions({
                   text: url,
                   arena: avatarStatic,
                   backgroundMask: headerStatic,
-                  caption: acct.includes('@') ? acct : `${acct}@${instance}`,
+                  caption: acctWithInstance,
                   onScannerClick: handleScannerClick,
                 };
               }}
@@ -890,7 +919,7 @@ function RelatedActions({
                   <span>
                     {requested
                       ? t`Withdraw follow request?`
-                      : t`Unfollow @${info.acct || info.username}?`}
+                      : t`Unfollow @${info.acct ? punycode.toUnicode(info.acct) : info.username}?`}
                   </span>
                 }
                 menuItemClassName="danger"
